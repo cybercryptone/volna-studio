@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A-house — Архитектурный коворкинг — Портфолио ВОЛНА</title>
+  <meta name="description" content="Акустическое проектирование коворкинга A-house с нуля: 5 зон, встроенный звук, ни одного видимого кабеля."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../portfolio.css"/>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<nav>
+  <a href="/" class="logo"><span class="logo-tilde">〜</span> ВОЛНА</a>
+  <div class="nav-links">
+    <a href="/#услуги">Услуги</a>
+    <a href="/portfolio/" class="active">Портфолио</a>
+    <a href="/#основатель">Основатель</a>
+    <a href="/blog/">Журнал</a>
+  </div>
+  <a href="/#контакты" class="nav-cta">Связаться</a>
+</nav>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="case-hero-bg">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="ah-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%"   stop-color="#0a0e1a"/>
+          <stop offset="60%"  stop-color="#0d1520"/>
+          <stop offset="100%" stop-color="#091418"/>
+        </linearGradient>
+        <radialGradient id="spk-glow-1" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#ff6b3d" stop-opacity="0.55"/>
+          <stop offset="100%" stop-color="#ff6b3d" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="spk-glow-2" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#4a7c8a" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#4a7c8a" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="spk-glow-3" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#ffb547" stop-opacity="0.35"/>
+          <stop offset="100%" stop-color="#ffb547" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <rect width="1440" height="900" fill="url(#ah-bg)"/>
+
+      <!-- === PERSPECTIVE GRID FLOOR === -->
+      <!-- Vanishing point at ~720, 320 -->
+      <!-- Horizontal grid lines (receding floor) -->
+      <line x1="0"    y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.6" opacity="0.07"/>
+      <line x1="160"  y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.5" opacity="0.07"/>
+      <line x1="320"  y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.5" opacity="0.07"/>
+      <line x1="480"  y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.5" opacity="0.07"/>
+      <line x1="640"  y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.4" opacity="0.07"/>
+      <line x1="800"  y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.4" opacity="0.07"/>
+      <line x1="960"  y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.5" opacity="0.07"/>
+      <line x1="1120" y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.5" opacity="0.07"/>
+      <line x1="1280" y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.5" opacity="0.07"/>
+      <line x1="1440" y1="900" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.6" opacity="0.07"/>
+
+      <!-- Cross-sectional floor lines (depth) -->
+      <line x1="0"    y1="900" x2="1440" y2="900" stroke="#f2ebe0" stroke-width="0.5" opacity="0.08"/>
+      <line x1="100"  y1="760" x2="1340" y2="760" stroke="#f2ebe0" stroke-width="0.4" opacity="0.07"/>
+      <line x1="200"  y1="650" x2="1240" y2="650" stroke="#f2ebe0" stroke-width="0.4" opacity="0.06"/>
+      <line x1="310"  y1="555" x2="1130" y2="555" stroke="#f2ebe0" stroke-width="0.3" opacity="0.06"/>
+      <line x1="400"  y1="470" x2="1040" y2="470" stroke="#f2ebe0" stroke-width="0.3" opacity="0.05"/>
+      <line x1="490"  y1="400" x2="950"  y2="400" stroke="#f2ebe0" stroke-width="0.3" opacity="0.05"/>
+      <line x1="565"  y1="347" x2="875"  y2="347" stroke="#f2ebe0" stroke-width="0.25" opacity="0.05"/>
+
+      <!-- === ABSTRACT FLOOR PLAN SHAPES with subtle fills === -->
+      <!-- Main open space — upper left rectangle -->
+      <rect x="80"  y="380" width="360" height="240" fill="#4a7c8a" opacity="0.06" stroke="#4a7c8a" stroke-width="0.8" opacity2="0.2"/>
+      <text x="260" y="510" font-family="JetBrains Mono, monospace" font-size="10" fill="#4a7c8a" text-anchor="middle" opacity="0.25" letter-spacing="2">OPEN SPACE</text>
+
+      <!-- Meeting room — top center -->
+      <rect x="470" y="380" width="180" height="130" fill="#ff6b3d" opacity="0.05" stroke="#ff6b3d" stroke-width="0.8" stroke-dasharray="6,4" opacity2="0.3"/>
+
+      <!-- Lounge — top right -->
+      <rect x="680" y="380" width="220" height="150" fill="#ffb547" opacity="0.05" stroke="#ffb547" stroke-width="0.8" opacity2="0.2"/>
+
+      <!-- Cafe — right -->
+      <rect x="940" y="380" width="200" height="240" fill="#ff6b3d" opacity="0.04" stroke="#ff6b3d" stroke-width="0.8" opacity2="0.18"/>
+
+      <!-- Quiet zone — lower center -->
+      <rect x="470" y="540" width="300" height="130" fill="none" stroke="#f2ebe0" stroke-width="0.8" stroke-dasharray="5,5" opacity="0.18"/>
+
+      <!-- === SPEAKER DOTS glowing === -->
+      <!-- Open space speakers -->
+      <circle cx="150" cy="420" r="18" fill="url(#spk-glow-2)"/>
+      <circle cx="150" cy="420" r="4"  fill="#4a7c8a" opacity="0.9"/>
+      <circle cx="380" cy="420" r="18" fill="url(#spk-glow-2)"/>
+      <circle cx="380" cy="420" r="4"  fill="#4a7c8a" opacity="0.9"/>
+      <circle cx="150" cy="570" r="18" fill="url(#spk-glow-2)"/>
+      <circle cx="150" cy="570" r="4"  fill="#4a7c8a" opacity="0.9"/>
+      <circle cx="380" cy="570" r="18" fill="url(#spk-glow-2)"/>
+      <circle cx="380" cy="570" r="4"  fill="#4a7c8a" opacity="0.9"/>
+
+      <!-- Meeting room speaker -->
+      <circle cx="560" cy="445" r="14" fill="url(#spk-glow-1)"/>
+      <circle cx="560" cy="445" r="3.5" fill="#ff6b3d" opacity="0.9"/>
+
+      <!-- Lounge speakers -->
+      <circle cx="720" cy="415" r="14" fill="url(#spk-glow-3)"/>
+      <circle cx="720" cy="415" r="3.5" fill="#ffb547" opacity="0.9"/>
+      <circle cx="870" cy="415" r="14" fill="url(#spk-glow-3)"/>
+      <circle cx="870" cy="415" r="3.5" fill="#ffb547" opacity="0.9"/>
+
+      <!-- Cafe speakers -->
+      <circle cx="980" cy="430" r="14" fill="url(#spk-glow-1)"/>
+      <circle cx="980" cy="430" r="3.5" fill="#ff6b3d" opacity="0.9"/>
+      <circle cx="1100" cy="430" r="14" fill="url(#spk-glow-1)"/>
+      <circle cx="1100" cy="430" r="3.5" fill="#ff6b3d" opacity="0.9"/>
+
+      <!-- Horizon line accent -->
+      <line x1="0" y1="320" x2="1440" y2="320" stroke="#4a7c8a" stroke-width="0.6" opacity="0.18"/>
+
+      <!-- Upper wall ceiling perspective lines -->
+      <line x1="0"    y1="320" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.3" opacity="0.06"/>
+      <line x1="1440" y1="320" x2="720"  y2="320" stroke="#f2ebe0" stroke-width="0.3" opacity="0.06"/>
+
+      <!-- Vertical wall lines rising from floor -->
+      <line x1="80"  y1="900" x2="80"  y2="320" stroke="#f2ebe0" stroke-width="0.5" opacity="0.08"/>
+      <line x1="1360" y1="900" x2="1360" y2="320" stroke="#f2ebe0" stroke-width="0.5" opacity="0.08"/>
+
+      <!-- Atmospheric bottom fade -->
+      <rect x="0" y="650" width="1440" height="250" fill="url(#ah-bg)" opacity="0.3"/>
+    </svg>
+  </div>
+  <div class="case-hero-overlay"></div>
+  <div class="case-hero-content">
+    <div class="case-hero-kicker">
+      Портфолио <span class="sep">·</span> 2023 <span class="sep">·</span> Архитектурный коворкинг
+    </div>
+    <h1 class="case-hero-title">Архитектурный <span class="ital">A-house</span></h1>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="s-label">Площадь</div>
+    <div class="s-val">420 <span class="c">м²</span></div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Акустических зон</div>
+    <div class="s-val"><span class="c">5</span> независимых</div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Видимых кабелей</div>
+    <div class="s-val"><span class="c">0</span></div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Этап входа</div>
+    <div class="s-val">До <span class="c">ремонта</span></div>
+  </div>
+</div>
+
+<!-- SECTION 01: ЗАДАЧА -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">01 / Задача</div>
+    <div class="section-body">
+      <p class="case-lead">Звук, который <span class="ital">спроектирован вместе</span> с архитектурой — а не вписан в неё после.</p>
+      <p class="case-text">A-house — коворкинг для архитекторов и дизайнеров. Аудитория требовательная: к пространству, к деталям, к тому, чтобы ничего не торчало и не нарушало общую концепцию. Звук должен был быть частью здания — не посторонним элементом.</p>
+      <p class="case-text">Нас позвали на этапе разработки проекта, до начала отделочных работ. Это редкость — и это дало нам возможность сделать всё правильно.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ILLUSTRATION BLOCK 1: Floor plan + Construction timeline -->
+<div class="illus-block">
+  <div class="illus-two-col">
+
+    <!-- Left: 5-zone floor plan -->
+    <div class="illus-item">
+      <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg" aria-label="План 5 акустических зон A-house">
+        <defs>
+          <pattern id="fp-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f2ebe0" stroke-width="0.2" opacity="0.2"/>
+          </pattern>
+          <pattern id="quiet-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="10" stroke="#f2ebe0" stroke-width="0.6" opacity="0.2"/>
+          </pattern>
+        </defs>
+
+        <rect width="500" height="380" fill="#0f1625" rx="4"/>
+        <rect width="500" height="380" fill="url(#fp-grid)" rx="4"/>
+
+        <!-- === ZONE 1: OPEN SPACE (large, top-left) === -->
+        <rect x="28"  y="28"  width="190" height="155" rx="3" fill="rgba(74,124,138,0.12)" stroke="#4a7c8a" stroke-width="1.5"/>
+        <text x="123" y="52"  font-family="JetBrains Mono, monospace" font-size="9.5" fill="#4a7c8a" text-anchor="middle" letter-spacing="2">OPEN SPACE</text>
+        <text x="123" y="65"  font-family="JetBrains Mono, monospace" font-size="8" fill="#4a7c8a" text-anchor="middle" opacity="0.55">Зона 1</text>
+        <!-- Speaker dots zone 1 -->
+        <circle cx="70"  cy="105" r="14" fill="rgba(74,124,138,0.1)" stroke="rgba(74,124,138,0.3)" stroke-width="0.8"/>
+        <circle cx="70"  cy="105" r="4"  fill="#4a7c8a" opacity="0.9"/>
+        <circle cx="123" cy="105" r="14" fill="rgba(74,124,138,0.1)" stroke="rgba(74,124,138,0.3)" stroke-width="0.8"/>
+        <circle cx="123" cy="105" r="4"  fill="#4a7c8a" opacity="0.9"/>
+        <circle cx="176" cy="105" r="14" fill="rgba(74,124,138,0.1)" stroke="rgba(74,124,138,0.3)" stroke-width="0.8"/>
+        <circle cx="176" cy="105" r="4"  fill="#4a7c8a" opacity="0.9"/>
+        <circle cx="70"  cy="150" r="14" fill="rgba(74,124,138,0.1)" stroke="rgba(74,124,138,0.3)" stroke-width="0.8"/>
+        <circle cx="70"  cy="150" r="4"  fill="#4a7c8a" opacity="0.9"/>
+        <circle cx="176" cy="150" r="14" fill="rgba(74,124,138,0.1)" stroke="rgba(74,124,138,0.3)" stroke-width="0.8"/>
+        <circle cx="176" cy="150" r="4"  fill="#4a7c8a" opacity="0.9"/>
+
+        <!-- === ZONE 2: ПЕРЕГОВОРНАЯ (top-center, dashed coral border) === -->
+        <rect x="236" y="28"  width="130" height="90" rx="3" fill="rgba(255,107,61,0.07)" stroke="#ff6b3d" stroke-width="1.5" stroke-dasharray="6,3"/>
+        <text x="301" y="54"  font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle" letter-spacing="1.5">ПЕРЕГО-</text>
+        <text x="301" y="67"  font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle" letter-spacing="1.5">ВОРНАЯ</text>
+        <text x="301" y="80"  font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.55">Зона 2</text>
+        <!-- MXA910 mic array indicator -->
+        <circle cx="301" cy="100" r="10" fill="none" stroke="#ff6b3d" stroke-width="1" stroke-dasharray="3,2" opacity="0.6"/>
+        <circle cx="301" cy="100" r="4"  fill="#ff6b3d" opacity="0.6"/>
+        <text x="301" y="116" font-family="JetBrains Mono, monospace" font-size="7" fill="#ff6b3d" text-anchor="middle" opacity="0.55">MXA910</text>
+
+        <!-- === ZONE 3: ЛАУНДЖ (top-right, amber fill) === -->
+        <rect x="384" y="28"  width="96" height="155" rx="3" fill="rgba(255,181,71,0.09)" stroke="#ffb547" stroke-width="1.5"/>
+        <text x="432" y="80"  font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ffb547" text-anchor="middle" letter-spacing="1" transform="rotate(-90,432,100)">ЛАУНДЖ</text>
+        <text x="432" y="145" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle" opacity="0.55">Зона 3</text>
+        <!-- Speaker dots zone 3 -->
+        <circle cx="432" cy="60"  r="12" fill="rgba(255,181,71,0.1)" stroke="rgba(255,181,71,0.3)" stroke-width="0.8"/>
+        <circle cx="432" cy="60"  r="4"  fill="#ffb547" opacity="0.9"/>
+        <circle cx="432" cy="120" r="12" fill="rgba(255,181,71,0.1)" stroke="rgba(255,181,71,0.3)" stroke-width="0.8"/>
+        <circle cx="432" cy="120" r="4"  fill="#ffb547" opacity="0.9"/>
+
+        <!-- === ZONE 4: ТИХАЯ ЗОНА (bottom-center, dashed white outline, silence symbol) === -->
+        <rect x="152" y="207" width="210" height="110" rx="3" fill="url(#quiet-hatch)" stroke="#f2ebe0" stroke-width="1.2" stroke-dasharray="5,5" opacity="0.65"/>
+        <text x="257" y="245" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle" letter-spacing="1.5" opacity="0.7">ТИХАЯ</text>
+        <text x="257" y="258" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle" letter-spacing="1.5" opacity="0.7">ЗОНА</text>
+        <text x="257" y="275" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Зона 4 · 32 дБА</text>
+        <!-- Silence symbol ∅ -->
+        <circle cx="257" cy="303" r="10" fill="none" stroke="#f2ebe0" stroke-width="1.2" opacity="0.4"/>
+        <line x1="249" y1="295" x2="265" y2="311" stroke="#f2ebe0" stroke-width="1.2" opacity="0.4"/>
+
+        <!-- === ZONE 5: КАФЕ (bottom-right, warm coral fill) === -->
+        <rect x="384" y="207" width="96" height="110" rx="3" fill="rgba(255,107,61,0.09)" stroke="#ff6b3d" stroke-width="1.5"/>
+        <text x="432" y="265" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle" transform="rotate(-90,432,265)">КАФЕ</text>
+        <text x="432" y="302" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.55">Зона 5</text>
+        <!-- Cafe speaker dots -->
+        <circle cx="406" cy="230" r="10" fill="rgba(255,107,61,0.15)" stroke="rgba(255,107,61,0.4)" stroke-width="0.8"/>
+        <circle cx="406" cy="230" r="3.5" fill="#ff6b3d" opacity="0.9"/>
+        <circle cx="460" cy="230" r="10" fill="rgba(255,107,61,0.15)" stroke="rgba(255,107,61,0.4)" stroke-width="0.8"/>
+        <circle cx="460" cy="230" r="3.5" fill="#ff6b3d" opacity="0.9"/>
+
+        <!-- Control room closet — bottom-left -->
+        <rect x="28"  y="207" width="105" height="55" rx="2" fill="rgba(30,58,71,0.5)" stroke="#4a7c8a" stroke-width="1" stroke-dasharray="4,3"/>
+        <text x="80"  y="230" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#4a7c8a" text-anchor="middle" letter-spacing="1">АППАРАТНАЯ</text>
+        <text x="80"  y="243" font-family="JetBrains Mono, monospace" font-size="7" fill="#4a7c8a" text-anchor="middle" opacity="0.6">Crestron · Lab.grp</text>
+
+        <!-- === COLOR KEY at bottom === -->
+        <g transform="translate(28, 333)">
+          <rect x="0"   y="0" width="10" height="10" fill="#4a7c8a" opacity="0.7"/>
+          <text x="14"  y="9" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.6">Open Space</text>
+          <rect x="100" y="0" width="10" height="10" fill="#ff6b3d" opacity="0.7"/>
+          <text x="114" y="9" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.6">Переговорная / Кафе</text>
+          <rect x="286" y="0" width="10" height="10" fill="#ffb547" opacity="0.7"/>
+          <text x="300" y="9" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.6">Лаундж</text>
+        </g>
+        <g transform="translate(28, 351)">
+          <rect x="0" y="0" width="10" height="10" fill="none" stroke="#f2ebe0" stroke-width="1" stroke-dasharray="3,2" opacity="0.4"/>
+          <text x="14" y="9" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.6">Тихая зона</text>
+          <circle cx="105" cy="5" r="4" fill="#4a7c8a" opacity="0.8"/>
+          <text x="114" y="9" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.6">АС (потолочные)</text>
+        </g>
+      </svg>
+      <div class="illus-caption-title">5 акустических зон</div>
+      <div class="illus-caption">Независимое управление каждой зоной</div>
+    </div>
+
+    <!-- Right: Construction timeline -->
+    <div class="illus-item">
+      <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg" aria-label="Интеграция акустики в строительный процесс">
+        <defs>
+          <linearGradient id="phase-highlighted" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#ff6b3d" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#ff6b3d" stop-opacity="0.08"/>
+          </linearGradient>
+          <linearGradient id="phase-dimmed" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#f2ebe0" stop-opacity="0.04"/>
+            <stop offset="100%" stop-color="#f2ebe0" stop-opacity="0.02"/>
+          </linearGradient>
+        </defs>
+
+        <rect width="500" height="380" fill="#0f1625" rx="4"/>
+
+        <!-- Timeline title -->
+        <text x="250" y="30" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#f2ebe0" text-anchor="middle" letter-spacing="2" opacity="0.5">СТРОИТЕЛЬНЫЙ ПРОЦЕСС</text>
+
+        <!-- Main timeline horizontal line -->
+        <line x1="50" y1="110" x2="460" y2="110" stroke="#f2ebe0" stroke-width="1.2" opacity="0.25"/>
+
+        <!-- === PHASE 1: ПРОЕКТИРОВАНИЕ — highlighted coral === -->
+        <!-- Phase node -->
+        <circle cx="50"  cy="110" r="8" fill="#ff6b3d" opacity="0.9"/>
+        <line x1="50" y1="102" x2="50" y2="50" stroke="#ff6b3d" stroke-width="1.2" opacity="0.6"/>
+        <!-- Phase label above -->
+        <text x="50"  y="44"  font-family="JetBrains Mono, monospace" font-size="8" fill="#ff6b3d" text-anchor="middle" letter-spacing="1" opacity="0.9">ПРОЕКТИ-</text>
+        <text x="50"  y="55"  font-family="JetBrains Mono, monospace" font-size="8" fill="#ff6b3d" text-anchor="middle" letter-spacing="1" opacity="0.9">РОВАНИЕ</text>
+        <text x="50"  y="67"  font-family="JetBrains Mono, monospace" font-size="7" fill="#ff6b3d" text-anchor="middle" opacity="0.65">01</text>
+        <!-- Highlight box below -->
+        <rect x="15"  y="118" width="72" height="55" rx="3" fill="url(#phase-highlighted)" stroke="#ff6b3d" stroke-width="0.8"/>
+        <text x="51"  y="135" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.85">Акустическое</text>
+        <text x="51"  y="147" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.85">проектирование</text>
+        <text x="51"  y="159" font-family="JetBrains Mono, monospace" font-size="7" fill="#ff6b3d" text-anchor="middle" opacity="0.6">входит здесь →</text>
+        <text x="51"  y="170" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">зонирование · трассы</text>
+
+        <!-- === PHASE 2: ДЕМОНТАЖ — dimmed === -->
+        <circle cx="152" cy="110" r="6" fill="#f2ebe0" opacity="0.2"/>
+        <line x1="152" y1="102" x2="152" y2="62" stroke="#f2ebe0" stroke-width="0.8" opacity="0.2"/>
+        <text x="152" y="56"  font-family="JetBrains Mono, monospace" font-size="8"   fill="#f2ebe0" text-anchor="middle" opacity="0.3">ДЕМОНТАЖ</text>
+        <text x="152" y="68"  font-family="JetBrains Mono, monospace" font-size="7"   fill="#f2ebe0" text-anchor="middle" opacity="0.25">02</text>
+        <rect x="118" y="118" width="68" height="40" rx="3" fill="url(#phase-dimmed)"/>
+        <text x="152" y="135" font-family="JetBrains Mono, monospace" font-size="7"   fill="#f2ebe0" text-anchor="middle" opacity="0.25">снос + расчистка</text>
+        <text x="152" y="148" font-family="JetBrains Mono, monospace" font-size="7"   fill="#f2ebe0" text-anchor="middle" opacity="0.25">пространства</text>
+
+        <!-- === PHASE 3: ЧЕРНОВЫЕ РАБОТЫ — highlighted === -->
+        <circle cx="254" cy="110" r="8" fill="#ff6b3d" opacity="0.9"/>
+        <line x1="254" y1="102" x2="254" y2="50" stroke="#ff6b3d" stroke-width="1.2" opacity="0.6"/>
+        <text x="254" y="44"  font-family="JetBrains Mono, monospace" font-size="8" fill="#ff6b3d" text-anchor="middle" letter-spacing="0.5" opacity="0.9">ЧЕРНОВЫЕ</text>
+        <text x="254" y="55"  font-family="JetBrains Mono, monospace" font-size="8" fill="#ff6b3d" text-anchor="middle" letter-spacing="0.5" opacity="0.9">РАБОТЫ</text>
+        <text x="254" y="67"  font-family="JetBrains Mono, monospace" font-size="7" fill="#ff6b3d" text-anchor="middle" opacity="0.65">03</text>
+        <rect x="212" y="118" width="84" height="65" rx="3" fill="url(#phase-highlighted)" stroke="#ff6b3d" stroke-width="0.8"/>
+        <text x="254" y="136" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.85">Кабельные трассы</text>
+        <text x="254" y="148" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.85">в стяжке</text>
+        <text x="254" y="160" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.85">Кронштейны АС</text>
+        <text x="254" y="172" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">всё скрыто до отделки</text>
+        <text x="254" y="182" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">100% кабелей</text>
+
+        <!-- === PHASE 4: ЧИСТОВЫЕ РАБОТЫ — highlighted === -->
+        <circle cx="356" cy="110" r="8" fill="#4a7c8a" opacity="0.9"/>
+        <line x1="356" y1="102" x2="356" y2="62" stroke="#4a7c8a" stroke-width="1.2" opacity="0.6"/>
+        <text x="356" y="56"  font-family="JetBrains Mono, monospace" font-size="8" fill="#4a7c8a" text-anchor="middle" letter-spacing="0.5" opacity="0.9">ЧИСТОВЫЕ</text>
+        <text x="356" y="67"  font-family="JetBrains Mono, monospace" font-size="7" fill="#4a7c8a" text-anchor="middle" opacity="0.65">04</text>
+        <rect x="316" y="118" width="80" height="65" rx="3" fill="rgba(74,124,138,0.15)" stroke="#4a7c8a" stroke-width="0.8"/>
+        <text x="356" y="136" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#4a7c8a" text-anchor="middle" opacity="0.85">Панели Genelec</text>
+        <text x="356" y="148" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#4a7c8a" text-anchor="middle" opacity="0.85">в потолок</text>
+        <text x="356" y="160" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#4a7c8a" text-anchor="middle" opacity="0.85">Акуст. панели</text>
+        <text x="356" y="172" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#4a7c8a" text-anchor="middle" opacity="0.85">= декор стен</text>
+        <text x="356" y="182" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">интегрированы в дизайн</text>
+
+        <!-- === PHASE 5: ПУСКОНАЛАДКА — highlighted amber === -->
+        <circle cx="460" cy="110" r="8" fill="#ffb547" opacity="0.9"/>
+        <line x1="460" y1="102" x2="460" y2="50" stroke="#ffb547" stroke-width="1.2" opacity="0.6"/>
+        <text x="460" y="44"  font-family="JetBrains Mono, monospace" font-size="8" fill="#ffb547" text-anchor="middle" letter-spacing="0.5" opacity="0.9">ПУСКО-</text>
+        <text x="460" y="55"  font-family="JetBrains Mono, monospace" font-size="8" fill="#ffb547" text-anchor="middle" letter-spacing="0.5" opacity="0.9">НАЛАДКА</text>
+        <text x="460" y="67"  font-family="JetBrains Mono, monospace" font-size="7" fill="#ffb547" text-anchor="middle" opacity="0.65">05</text>
+        <rect x="420" y="118" width="72" height="65" rx="3" fill="rgba(255,181,71,0.12)" stroke="#ffb547" stroke-width="0.8"/>
+        <text x="456" y="136" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle" opacity="0.85">Финальная</text>
+        <text x="456" y="148" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle" opacity="0.85">настройка</text>
+        <text x="456" y="160" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle" opacity="0.85">Crestron</text>
+        <text x="456" y="172" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle" opacity="0.85">сцены дня</text>
+        <text x="456" y="182" font-family="JetBrains Mono, monospace" font-size="6.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">измерения + EQ</text>
+
+        <!-- Vertical connectors between timeline points -->
+        <line x1="50"  y1="118" x2="50"  y2="173" stroke="#ff6b3d" stroke-width="0.6" opacity="0.35" stroke-dasharray="3,3"/>
+        <line x1="254" y1="118" x2="254" y2="183" stroke="#ff6b3d" stroke-width="0.6" opacity="0.35" stroke-dasharray="3,3"/>
+        <line x1="356" y1="118" x2="356" y2="183" stroke="#4a7c8a" stroke-width="0.6" opacity="0.35" stroke-dasharray="3,3"/>
+        <line x1="460" y1="118" x2="460" y2="183" stroke="#ffb547" stroke-width="0.6" opacity="0.35" stroke-dasharray="3,3"/>
+
+        <!-- Summary note below -->
+        <rect x="28" y="215" width="444" height="46" rx="3" fill="rgba(255,107,61,0.06)" stroke="#ff6b3d" stroke-width="0.8" opacity="0.6"/>
+        <text x="250" y="234" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle" opacity="0.8">Акустическое бюро работает с фазы 01 по фазу 05</text>
+        <text x="250" y="249" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.45">Проектировщик, поставщик, монтажник, инженер</text>
+
+        <!-- Bottom legend -->
+        <circle cx="38"  cy="290" r="6" fill="#ff6b3d" opacity="0.8"/>
+        <text x="52"  y="294" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.6">Акустика активно вовлечена</text>
+        <circle cx="38"  cy="310" r="6" fill="#f2ebe0" opacity="0.25"/>
+        <text x="52"  y="314" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.4">Смежные работы (без нас)</text>
+
+        <!-- Decorative timeline arrows at ends -->
+        <polygon points="465,108 474,110 465,112" fill="#ffb547" opacity="0.7"/>
+      </svg>
+      <div class="illus-caption-title">Интеграция в строительный процесс</div>
+      <div class="illus-caption">Акустика — с первого дня</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SECTION 02: РЕШЕНИЕ -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">02 / Решение</div>
+    <div class="section-body">
+      <p class="case-lead">Genelec встроены в потолок. Кабели ушли в стяжку. <span class="ital">Звук просто есть</span>.</p>
+      <p class="case-text">Все кабельные трассы проложены в стяжке и штробах до финишной отделки. Потолочные акустические системы Genelec 4030 вмонтированы в подвесной потолок с точностью до миллиметра — никаких накладных кронштейнов.</p>
+      <p class="case-text">Переговорная получила отдельный кольцевой микрофонный массив для видеоконференций. Тихая зона работает с уровнем фонового звука 32 дБА — ниже, чем в большинстве библиотек. Кафе — единственное место с возможностью включить музыку громче: до 80 дБ.</p>
+      <p class="case-text">Управление — Crestron: один iPad на стойке ресепшн управляет всеми зонами, сценами дня, уровнями. Расписание включается автоматически по будням в 9:00.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ILLUSTRATION BLOCK 2: Crestron control system diagram -->
+<div class="illus-block illus-block--padded">
+  <div class="illus-single">
+    <svg viewBox="0 0 1200 240" xmlns="http://www.w3.org/2000/svg" aria-label="Система управления Crestron">
+      <defs>
+        <linearGradient id="proc-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#1e3a47"/>
+          <stop offset="100%" stop-color="#0f1625"/>
+        </linearGradient>
+        <linearGradient id="zone-box-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#1a2035"/>
+          <stop offset="100%" stop-color="#0f1625"/>
+        </linearGradient>
+        <marker id="arr-c2" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+          <polygon points="0 0, 7 2.5, 0 5" fill="#ff6b3d"/>
+        </marker>
+        <marker id="arr-t2" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+          <polygon points="0 0, 7 2.5, 0 5" fill="#4a7c8a"/>
+        </marker>
+        <marker id="arr-a2" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+          <polygon points="0 0, 7 2.5, 0 5" fill="#ffb547"/>
+        </marker>
+      </defs>
+
+      <rect width="1200" height="240" fill="#0f1625" rx="4"/>
+
+      <!-- Title -->
+      <text x="600" y="24" font-family="JetBrains Mono, monospace" font-size="11" fill="#f2ebe0" text-anchor="middle" letter-spacing="2" opacity="0.6">СИСТЕМА УПРАВЛЕНИЯ CRESTRON</text>
+
+      <!-- ===== INPUT SOURCES (left column) ===== -->
+      <text x="100" y="47" font-family="JetBrains Mono, monospace" font-size="9" fill="#f2ebe0" text-anchor="middle" opacity="0.45" letter-spacing="1.5">ИСТОЧНИКИ</text>
+
+      <!-- Streaming -->
+      <rect x="18"  y="55" width="164" height="34" rx="3" fill="url(#zone-box-bg)" stroke="#ff6b3d" stroke-width="1"/>
+      <text x="100" y="69" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#ff6b3d" text-anchor="middle">Sonos Streaming × 5</text>
+      <text x="100" y="81" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.45">AirPlay / Bluetooth по зонам</text>
+
+      <!-- AirPlay -->
+      <rect x="18"  y="98" width="164" height="34" rx="3" fill="url(#zone-box-bg)" stroke="#ff6b3d" stroke-width="1"/>
+      <text x="100" y="112" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#ff6b3d" text-anchor="middle">AirPlay 2</text>
+      <text x="100" y="124" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.45">Прямая трансляция</text>
+
+      <!-- Mic array -->
+      <rect x="18"  y="141" width="164" height="34" rx="3" fill="url(#zone-box-bg)" stroke="#4a7c8a" stroke-width="1"/>
+      <text x="100" y="155" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#4a7c8a" text-anchor="middle">Shure MXA910</text>
+      <text x="100" y="167" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.45">Потолочный мик. массив</text>
+
+      <!-- Video conference -->
+      <rect x="18"  y="184" width="164" height="34" rx="3" fill="url(#zone-box-bg)" stroke="#4a7c8a" stroke-width="1"/>
+      <text x="100" y="198" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#4a7c8a" text-anchor="middle">Видеоконференция</text>
+      <text x="100" y="210" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.45">QSC NV-32-H · Dante</text>
+
+      <!-- Arrows → processor -->
+      <line x1="182" y1="72"  x2="424" y2="115" stroke="#ff6b3d" stroke-width="1"   opacity="0.5" marker-end="url(#arr-c2)"/>
+      <line x1="182" y1="115" x2="424" y2="118" stroke="#ff6b3d" stroke-width="1"   opacity="0.5" marker-end="url(#arr-c2)"/>
+      <line x1="182" y1="158" x2="424" y2="122" stroke="#4a7c8a" stroke-width="1"   opacity="0.5" marker-end="url(#arr-t2)"/>
+      <line x1="182" y1="201" x2="424" y2="125" stroke="#4a7c8a" stroke-width="1"   opacity="0.5" marker-end="url(#arr-t2)"/>
+
+      <!-- ===== CENTRAL CRESTRON PROCESSOR ===== -->
+      <text x="516" y="47" font-family="JetBrains Mono, monospace" font-size="9" fill="#f2ebe0" text-anchor="middle" opacity="0.45" letter-spacing="1.5">ПРОЦЕССОР</text>
+
+      <rect x="428" y="55" width="176" height="165" rx="6" fill="url(#proc-bg)" stroke="#4a7c8a" stroke-width="2"/>
+      <!-- Inner highlight -->
+      <rect x="434" y="61" width="164" height="153" rx="4" fill="none" stroke="#4a7c8a" stroke-width="0.5" opacity="0.3"/>
+
+      <text x="516" y="88"  font-family="JetBrains Mono, monospace" font-size="12" fill="#4a7c8a" text-anchor="middle" font-weight="500" letter-spacing="1">CRESTRON</text>
+      <text x="516" y="105" font-family="JetBrains Mono, monospace" font-size="10" fill="#f2ebe0" text-anchor="middle" opacity="0.7">CP4-R</text>
+      <!-- Small LED indicators -->
+      <circle cx="490" cy="120" r="3" fill="#ff6b3d" opacity="0.8"/>
+      <circle cx="502" cy="120" r="3" fill="#4a7c8a" opacity="0.8"/>
+      <circle cx="514" cy="120" r="3" fill="#ffb547" opacity="0.8"/>
+      <circle cx="526" cy="120" r="3" fill="#4a7c8a" opacity="0.8"/>
+      <circle cx="538" cy="120" r="3" fill="#ff6b3d" opacity="0.6"/>
+      <text x="516" y="140" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.5">DSP · Routing</text>
+      <text x="516" y="153" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.5">EQ · Compressor</text>
+      <text x="516" y="168" font-family="JetBrains Mono, monospace" font-size="8" fill="#ff6b3d" text-anchor="middle" opacity="0.75">Dante / IP Audio</text>
+      <text x="516" y="181" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Lab.gruppen IPD 2400</text>
+      <text x="516" y="193" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.4">× 3 усилителя зон</text>
+      <text x="516" y="207" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle" opacity="0.6">Расписание: Пн-Пт 9:00</text>
+
+      <!-- ===== ZONE OUTPUTS (right column) ===== -->
+      <text x="900" y="47" font-family="JetBrains Mono, monospace" font-size="9" fill="#f2ebe0" text-anchor="middle" opacity="0.45" letter-spacing="1.5">ЗОНЫ</text>
+
+      <!-- Zone 1 -->
+      <rect x="608" y="42" width="210" height="33" rx="3" fill="rgba(74,124,138,0.12)" stroke="#4a7c8a" stroke-width="1.2"/>
+      <text x="713" y="56" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#4a7c8a" text-anchor="middle">Зона 1 · Open Space</text>
+      <text x="713" y="68" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.45">Genelec 4030 × 6 · ~50 дБА</text>
+
+      <!-- Zone 2 -->
+      <rect x="608" y="84" width="210" height="33" rx="3" fill="rgba(255,107,61,0.1)" stroke="#ff6b3d" stroke-width="1.2" stroke-dasharray="5,3"/>
+      <text x="713" y="98" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#ff6b3d" text-anchor="middle">Зона 2 · Переговорная</text>
+      <text x="713" y="110" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.45">Genelec 4030 × 2 · MXA910</text>
+
+      <!-- Zone 3 -->
+      <rect x="608" y="126" width="210" height="33" rx="3" fill="rgba(255,181,71,0.09)" stroke="#ffb547" stroke-width="1.2"/>
+      <text x="713" y="140" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#ffb547" text-anchor="middle">Зона 3 · Лаундж</text>
+      <text x="713" y="152" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.45">Genelec 4030 × 2 · ~45 дБА</text>
+
+      <!-- Zone 4 -->
+      <rect x="608" y="168" width="210" height="33" rx="3" fill="rgba(242,235,224,0.04)" stroke="#f2ebe0" stroke-width="1" stroke-dasharray="5,4" opacity="0.7"/>
+      <text x="713" y="182" font-family="JetBrains Mono, monospace" font-size="9.5" fill="#f2ebe0" text-anchor="middle" opacity="0.65">Зона 4 · Тихая зона</text>
+      <text x="713" y="194" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Genelec 4030 × 2 · 32 дБА</text>
+
+      <!-- Zone 5 -->
+      <rect x="608" y="210" width="210" height="16" rx="2" fill="rgba(255,107,61,0.1)" stroke="#ff6b3d" stroke-width="1"/>
+      <text x="713" y="222" font-family="JetBrains Mono, monospace" font-size="8" fill="#ff6b3d" text-anchor="middle">Зона 5 · Кафе · до 80 дБ</text>
+
+      <!-- Arrows processor → zones -->
+      <line x1="604" y1="100" x2="608" y2="58"  stroke="#4a7c8a" stroke-width="1.1" opacity="0.55" marker-end="url(#arr-t2)"/>
+      <line x1="604" y1="110" x2="608" y2="100" stroke="#ff6b3d" stroke-width="1.1" opacity="0.55" marker-end="url(#arr-c2)"/>
+      <line x1="604" y1="120" x2="608" y2="142" stroke="#ffb547" stroke-width="1.1" opacity="0.55" marker-end="url(#arr-a2)"/>
+      <line x1="604" y1="130" x2="608" y2="184" stroke="#f2ebe0" stroke-width="1.1" opacity="0.35" marker-end="url(#arr-c2)"/>
+      <line x1="604" y1="140" x2="608" y2="218" stroke="#ff6b3d" stroke-width="1.1" opacity="0.55" marker-end="url(#arr-c2)"/>
+
+      <!-- ===== CONTROL (right side) ===== -->
+      <!-- iPad controller -->
+      <rect x="854" y="50" width="140" height="65" rx="5" fill="url(#zone-box-bg)" stroke="#ffb547" stroke-width="1.2"/>
+      <!-- iPad screen detail -->
+      <rect x="862" y="58" width="124" height="50" rx="3" fill="#0a0e1a"/>
+      <rect x="866" y="62" width="116" height="38" rx="2" fill="#1a2035"/>
+      <!-- Zone grid on screen -->
+      <rect x="870" y="65" width="24" height="12" rx="1" fill="#4a7c8a" opacity="0.6"/>
+      <rect x="897" y="65" width="24" height="12" rx="1" fill="#ff6b3d" opacity="0.6"/>
+      <rect x="924" y="65" width="24" height="12" rx="1" fill="#ffb547" opacity="0.6"/>
+      <rect x="951" y="65" width="24" height="12" rx="1" fill="#f2ebe0" opacity="0.2"/>
+      <rect x="870" y="80" width="56" height="12" rx="1" fill="#ff6b3d" opacity="0.4"/>
+      <rect x="929" y="80" width="56" height="12" rx="1" fill="#4a7c8a" opacity="0.3"/>
+      <text x="924" y="127" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ffb547" text-anchor="middle">iPad · TSW-1070</text>
+      <text x="924" y="139" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Ресепшн · все зоны</text>
+
+      <!-- Bidirectional arrow iPad ↔ processor -->
+      <line x1="822" y1="120" x2="854" y2="83" stroke="#ffb547" stroke-width="1.1" stroke-dasharray="5,3" opacity="0.6"/>
+      <circle cx="838" cy="102" r="2.5" fill="#ffb547" opacity="0.5"/>
+
+      <!-- Clock / Scheduled automation -->
+      <rect x="854" y="145" width="140" height="65" rx="5" fill="url(#zone-box-bg)" stroke="#ffb547" stroke-width="1"/>
+      <!-- Clock icon -->
+      <circle cx="890" cy="178" r="18" fill="none" stroke="#ffb547" stroke-width="1.2" opacity="0.7"/>
+      <circle cx="890" cy="178" r="3"  fill="#ffb547" opacity="0.7"/>
+      <line x1="890" y1="178" x2="890" y2="164" stroke="#ffb547" stroke-width="1.5" opacity="0.7"/>
+      <line x1="890" y1="178" x2="900" y2="178" stroke="#ffb547" stroke-width="1.5" opacity="0.7"/>
+      <text x="952" y="170" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ffb547" text-anchor="middle">Расписание</text>
+      <text x="952" y="183" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ffb547" text-anchor="middle">авто</text>
+      <text x="952" y="198" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Пн–Пт · 9:00 вкл</text>
+
+      <!-- Arrow clock → processor -->
+      <line x1="822" y1="153" x2="822" y2="163" stroke="#ffb547" stroke-width="0.8" stroke-dasharray="3,3" opacity="0.4"/>
+      <line x1="854" y1="178" x2="604" y2="155" stroke="#ffb547" stroke-width="0.8" stroke-dasharray="5,3" opacity="0.35"/>
+    </svg>
+  </div>
+</div>
+
+<!-- SPECS GRID -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">Характеристики</div>
+    <div class="section-body">
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="sp-label">Акустика</div>
+          <div class="sp-val">Genelec 4030</div>
+          <div class="sp-sub">× 14 (потолочные)</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Усиление</div>
+          <div class="sp-val">Lab.gruppen IPD 2400</div>
+          <div class="sp-sub">× 3 усилителя зон</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Процессор / управление</div>
+          <div class="sp-val">Crestron CP4-R</div>
+          <div class="sp-sub">+ TSW-1070</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Конференц-система</div>
+          <div class="sp-val">Shure MXA910</div>
+          <div class="sp-sub">Потолочный массив</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Уровень тихой зоны</div>
+          <div class="sp-val">32 дБА</div>
+          <div class="sp-sub">Ниже, чем в библиотеке</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Кабельные трассы</div>
+          <div class="sp-val">100% скрытые</div>
+          <div class="sp-sub">В стяжке и штробах</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT LIST -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">Оборудование</div>
+    <div class="section-body">
+      <ul class="equip-list">
+        <li>
+          <span class="eq-name">Genelec 4030C × 14</span>
+          <span class="eq-role">Потолочные АС</span>
+        </li>
+        <li>
+          <span class="eq-name">Lab.gruppen IPD 2400 × 3</span>
+          <span class="eq-role">Усилители зон</span>
+        </li>
+        <li>
+          <span class="eq-name">Crestron CP4-R</span>
+          <span class="eq-role">Центральный процессор</span>
+        </li>
+        <li>
+          <span class="eq-name">Crestron TSW-1070</span>
+          <span class="eq-role">Настенные панели управления</span>
+        </li>
+        <li>
+          <span class="eq-name">Shure MXA910</span>
+          <span class="eq-role">Потолочный микрофонный массив</span>
+        </li>
+        <li>
+          <span class="eq-name">QSC Q-SYS NV-32-H</span>
+          <span class="eq-role">Сетевой видеоинтерфейс</span>
+        </li>
+        <li>
+          <span class="eq-name">Sonos Amp × 5</span>
+          <span class="eq-role">Источники стриминга по зонам</span>
+        </li>
+        <li>
+          <span class="eq-name">Dante Virtual Soundcard</span>
+          <span class="eq-role">Аудио по IP</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT QUOTE -->
+<div class="client-quote">
+  <p class="cq-text">«Архитекторы приходят к нам и спрашивают: а где у вас акустика? Это лучший комплимент.»</p>
+  <div class="cq-author">— Управляющий A-house</div>
+</div>
+
+<!-- NEXT PROJECT -->
+<a href="/portfolio/unica.html" class="next-project">
+  <div>
+    <div class="np-label">Следующий проект</div>
+    <div class="np-title">Особняк <span class="ital">Unica</span></div>
+  </div>
+  <div class="np-arrow">→</div>
+</a>
+
+<!-- CTA -->
+<section class="case-cta">
+  <h3>Строите <span class="ital">пространство</span>?</h3>
+  <p>Позовите нас до начала ремонта — и звук станет частью архитектуры.</p>
+  <a href="/#контакты" class="btn">Обсудить проект →</a>
+</section>
+
+<footer>
+  <div>© 2026 · Акустическое бюро ВОЛНА</div>
+  <a href="/portfolio/">← Портфолио</a>
+  <div>〜 buro-volna.ru</div>
+</footer>
+
+</body>
+</html>

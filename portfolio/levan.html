@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Домашний клуб Левана — Портфолио ВОЛНА</title>
+  <meta name="description" content="Аналоговый Hi-Fi и vinyl-setup для частного домашнего клуба. Концертное качество в жилом пространстве."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../portfolio.css"/>
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<nav>
+  <a href="/" class="logo"><span class="logo-tilde">〜</span> ВОЛНА</a>
+  <div class="nav-links">
+    <a href="/#услуги">Услуги</a>
+    <a href="/portfolio/" class="active">Портфолио</a>
+    <a href="/#основатель">Основатель</a>
+    <a href="/blog/">Журнал</a>
+  </div>
+  <a href="/#контакты" class="nav-cta">Связаться</a>
+</nav>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="case-hero-bg">
+    <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <radialGradient id="vinyl-center" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#ff6b3d" stop-opacity="0.55"/>
+          <stop offset="18%"  stop-color="#ffb547" stop-opacity="0.35"/>
+          <stop offset="45%"  stop-color="#1e3a47" stop-opacity="0.25"/>
+          <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="vinyl-glow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#ff6b3d" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+        </radialGradient>
+        <pattern id="fine-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+          <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f2ebe0" stroke-width="0.25" opacity="0.18"/>
+        </pattern>
+      </defs>
+
+      <!-- Base dark background -->
+      <rect width="1440" height="900" fill="#0a0e1a"/>
+
+      <!-- Subtle grid overlay -->
+      <rect width="1440" height="900" fill="url(#fine-grid)"/>
+
+      <!-- Large ambient glow centered right-of-center -->
+      <ellipse cx="820" cy="420" rx="600" ry="500" fill="url(#vinyl-glow)"/>
+
+      <!-- Vinyl grooves — concentric circles, centered at 820,420 -->
+      <!-- outer grooves — very faint -->
+      <circle cx="820" cy="420" r="420" fill="none" stroke="#f2ebe0" stroke-width="0.4" opacity="0.06"/>
+      <circle cx="820" cy="420" r="400" fill="none" stroke="#f2ebe0" stroke-width="0.3" opacity="0.07"/>
+      <circle cx="820" cy="420" r="380" fill="none" stroke="#f2ebe0" stroke-width="0.4" opacity="0.07"/>
+      <circle cx="820" cy="420" r="360" fill="none" stroke="#f2ebe0" stroke-width="0.3" opacity="0.08"/>
+      <circle cx="820" cy="420" r="340" fill="none" stroke="#f2ebe0" stroke-width="0.4" opacity="0.09"/>
+      <circle cx="820" cy="420" r="320" fill="none" stroke="#f2ebe0" stroke-width="0.3" opacity="0.09"/>
+      <circle cx="820" cy="420" r="300" fill="none" stroke="#ffb547" stroke-width="0.4" opacity="0.10"/>
+      <circle cx="820" cy="420" r="280" fill="none" stroke="#f2ebe0" stroke-width="0.3" opacity="0.11"/>
+      <circle cx="820" cy="420" r="260" fill="none" stroke="#f2ebe0" stroke-width="0.4" opacity="0.12"/>
+      <circle cx="820" cy="420" r="240" fill="none" stroke="#ffb547" stroke-width="0.5" opacity="0.13"/>
+      <circle cx="820" cy="420" r="220" fill="none" stroke="#f2ebe0" stroke-width="0.4" opacity="0.14"/>
+      <circle cx="820" cy="420" r="200" fill="none" stroke="#f2ebe0" stroke-width="0.5" opacity="0.15"/>
+      <circle cx="820" cy="420" r="180" fill="none" stroke="#ff6b3d" stroke-width="0.5" opacity="0.18"/>
+      <circle cx="820" cy="420" r="160" fill="none" stroke="#f2ebe0" stroke-width="0.5" opacity="0.20"/>
+      <circle cx="820" cy="420" r="140" fill="none" stroke="#ffb547" stroke-width="0.6" opacity="0.22"/>
+      <circle cx="820" cy="420" r="120" fill="none" stroke="#f2ebe0" stroke-width="0.6" opacity="0.25"/>
+      <circle cx="820" cy="420" r="100" fill="none" stroke="#ff6b3d" stroke-width="0.7" opacity="0.30"/>
+      <circle cx="820" cy="420" r="80"  fill="none" stroke="#ffb547" stroke-width="0.8" opacity="0.35"/>
+      <circle cx="820" cy="420" r="60"  fill="none" stroke="#ff6b3d" stroke-width="1.0" opacity="0.40"/>
+      <circle cx="820" cy="420" r="40"  fill="none" stroke="#ffb547" stroke-width="1.2" opacity="0.50"/>
+
+      <!-- Warm radial center fill -->
+      <circle cx="820" cy="420" r="420" fill="url(#vinyl-center)"/>
+
+      <!-- Label ring — light band on vinyl -->
+      <circle cx="820" cy="420" r="56" fill="#1e1006" stroke="#ffb547" stroke-width="0.8" opacity="0.6"/>
+      <circle cx="820" cy="420" r="12" fill="#ff6b3d" opacity="0.7"/>
+
+      <!-- Tonearm suggestion — thin diagonal line from top-right toward center -->
+      <line x1="1200" y1="60" x2="855" y2="405" stroke="#f2ebe0" stroke-width="1.5" opacity="0.18"/>
+      <circle cx="1200" cy="60" r="6" fill="none" stroke="#f2ebe0" stroke-width="1.2" opacity="0.18"/>
+      <circle cx="850" cy="408" r="4" fill="#ffb547" opacity="0.5"/>
+
+      <!-- Warm horizontal gradient fade left (so text reads well) -->
+      <rect width="700" height="900" fill="url(#vinyl-center)" opacity="0.18"/>
+
+      <!-- Subtle amber tone scatter — dust particles feel -->
+      <circle cx="340" cy="180" r="1.5" fill="#ffb547" opacity="0.25"/>
+      <circle cx="510" cy="320" r="1"   fill="#ff6b3d" opacity="0.20"/>
+      <circle cx="620" cy="700" r="1.5" fill="#ffb547" opacity="0.18"/>
+      <circle cx="200" cy="560" r="1"   fill="#f2ebe0" opacity="0.15"/>
+      <circle cx="430" cy="820" r="1.5" fill="#ff6b3d" opacity="0.18"/>
+    </svg>
+  </div>
+  <div class="case-hero-overlay"></div>
+  <div class="case-hero-content">
+    <div class="case-hero-kicker">
+      Портфолио <span class="sep">·</span> 2024 <span class="sep">·</span> Домашний клуб
+    </div>
+    <h1 class="case-hero-title">Клуб <span class="ital">Левана</span></h1>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="s-label">Площадь</div>
+    <div class="s-val">140 <span class="c">м²</span></div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Тракт</div>
+    <div class="s-val">Полностью <span class="c">аналоговый</span></div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Источники</div>
+    <div class="s-val">Vinyl <span class="c">·</span> CD <span class="c">·</span> Reel-to-reel</div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Формат</div>
+    <div class="s-val">2.2 стерео <span class="c">Hi-Fi</span></div>
+  </div>
+</div>
+
+<!-- SECTION 01: ЗАДАЧА -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">01 / Задача</div>
+    <div class="section-body">
+      <p class="case-lead">Домашний клуб с душой — не просто <span class="ital">громко</span>, а правильно.</p>
+      <p class="case-text">Леван — меломан с тридцатилетней коллекцией пластинок. Ему нужно было пространство, где можно слушать музыку с друзьями так, как слушают её на лучших клубных площадках. Не смартфоны через Bluetooth — аналоговый тракт, vinyl, и физическое ощущение звука.</p>
+      <p class="case-text">Задача была сложнее обычной: квартира в жилом доме, соседи, ограничения по SPL. При этом — никаких компромиссов по качеству. Звук должен был быть полным, тёплым и точным одновременно.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ILLUSTRATION BLOCK 1: Signal chain + Room plan -->
+<div class="illus-block">
+  <div class="illus-two-col">
+
+    <!-- Left: Analog signal chain -->
+    <div class="illus-item">
+      <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg" aria-label="Схема аналогового тракта">
+        <defs>
+          <linearGradient id="box-bg-l" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#1a2035"/>
+            <stop offset="100%" stop-color="#0f1625"/>
+          </linearGradient>
+          <marker id="arr-c" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+            <polygon points="0 0, 7 2.5, 0 5" fill="#ff6b3d"/>
+          </marker>
+          <marker id="arr-s" markerWidth="7" markerHeight="5" refX="7" refY="2.5" orient="auto">
+            <polygon points="0 0, 7 2.5, 0 5" fill="#f2ebe0" opacity="0.5"/>
+          </marker>
+          <!-- Waveform path clip -->
+          <clipPath id="wave-clip">
+            <rect x="0" y="0" width="500" height="380"/>
+          </clipPath>
+        </defs>
+
+        <rect width="500" height="380" fill="#0f1625" rx="4"/>
+
+        <!-- Background faint grid -->
+        <line x1="0"   y1="95"  x2="500" y2="95"  stroke="#f2ebe0" stroke-width="0.3" opacity="0.08"/>
+        <line x1="0"   y1="190" x2="500" y2="190" stroke="#f2ebe0" stroke-width="0.3" opacity="0.08"/>
+        <line x1="0"   y1="285" x2="500" y2="285" stroke="#f2ebe0" stroke-width="0.3" opacity="0.08"/>
+
+        <!-- ===== VINYL TURNTABLE — left box ===== -->
+        <!-- Platter circle -->
+        <circle cx="68" cy="90" r="38" fill="#141d2e" stroke="#ffb547" stroke-width="1.2"/>
+        <circle cx="68" cy="90" r="28" fill="none"   stroke="#ffb547" stroke-width="0.6" opacity="0.5"/>
+        <circle cx="68" cy="90" r="18" fill="none"   stroke="#ffb547" stroke-width="0.4" opacity="0.4"/>
+        <circle cx="68" cy="90" r="10" fill="none"   stroke="#ffb547" stroke-width="0.4" opacity="0.35"/>
+        <circle cx="68" cy="90" r="4"  fill="#ffb547" opacity="0.8"/>
+        <!-- Tonearm -->
+        <line x1="100" y1="58" x2="74"  y2="86" stroke="#f2ebe0" stroke-width="1.2" opacity="0.55"/>
+        <circle cx="100" cy="58" r="3"  fill="none" stroke="#f2ebe0" stroke-width="1" opacity="0.55"/>
+        <!-- Label -->
+        <text x="68" y="144" font-family="JetBrains Mono, monospace" font-size="9" fill="#ffb547" text-anchor="middle" letter-spacing="1.5">VINYL</text>
+        <text x="68" y="157" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Rega Planar 10</text>
+
+        <!-- Arrow vinyl → phono -->
+        <line x1="110" y1="90" x2="148" y2="90" stroke="#ffb547" stroke-width="1.2" opacity="0.6" marker-end="url(#arr-c)"/>
+
+        <!-- ===== PHONO STAGE box ===== -->
+        <rect x="152" y="68" width="88" height="44" rx="4" fill="url(#box-bg-l)" stroke="#ff6b3d" stroke-width="1.2"/>
+        <text x="196" y="86" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle">PHONO</text>
+        <text x="196" y="100" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.45">STAGE</text>
+
+        <!-- Waveform squiggle between phono and preamp -->
+        <path d="M243,90 C251,82 255,98 263,90 C271,82 275,98 283,90 C291,82 295,98 303,90 C311,82 315,98 323,90"
+              fill="none" stroke="#ff6b3d" stroke-width="1.2" opacity="0.45" clip-path="url(#wave-clip)"/>
+
+        <!-- Arrow phono → preamp -->
+        <line x1="325" y1="90" x2="349" y2="90" stroke="#ff6b3d" stroke-width="1.2" opacity="0.6" marker-end="url(#arr-c)"/>
+
+        <!-- ===== REEL-TO-REEL — second branch from phono area ===== -->
+        <!-- Reel circles -->
+        <circle cx="68" cy="230" r="30" fill="#141d2e" stroke="#d9e9ec" stroke-width="1"/>
+        <circle cx="68" cy="230" r="20" fill="none"   stroke="#d9e9ec" stroke-width="0.5" opacity="0.4"/>
+        <circle cx="68" cy="230" r="10" fill="none"   stroke="#d9e9ec" stroke-width="0.4" opacity="0.3"/>
+        <circle cx="68" cy="230" r="4"  fill="#d9e9ec" opacity="0.6"/>
+        <!-- second reel -->
+        <circle cx="118" cy="230" r="30" fill="#141d2e" stroke="#d9e9ec" stroke-width="1"/>
+        <circle cx="118" cy="230" r="20" fill="none"  stroke="#d9e9ec" stroke-width="0.5" opacity="0.4"/>
+        <circle cx="118" cy="230" r="10" fill="none"  stroke="#d9e9ec" stroke-width="0.4" opacity="0.3"/>
+        <circle cx="118" cy="230" r="4"  fill="#d9e9ec" opacity="0.6"/>
+        <!-- tape head area -->
+        <rect x="83" y="218" width="18" height="24" rx="2" fill="#1e3a47" stroke="#d9e9ec" stroke-width="0.8" opacity="0.7"/>
+        <!-- Label -->
+        <text x="93"  y="276" font-family="JetBrains Mono, monospace" font-size="9"   fill="#d9e9ec" text-anchor="middle" letter-spacing="1">REEL-TO-REEL</text>
+        <text x="93"  y="289" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Tascam BR-20</text>
+
+        <!-- Arrow reel → connects to preamp vertical line -->
+        <line x1="152" y1="230" x2="196" y2="230" stroke="#d9e9ec" stroke-width="1" opacity="0.45"/>
+        <line x1="196" y1="230" x2="196" y2="118" stroke="#d9e9ec" stroke-width="1" opacity="0.45" stroke-dasharray="4,3"/>
+        <!-- small dot at join -->
+        <circle cx="196" cy="118" r="3" fill="#d9e9ec" opacity="0.5"/>
+
+        <!-- ===== PREAMPLIFIER box ===== -->
+        <rect x="352" y="64" width="92" height="52" rx="4" fill="url(#box-bg-l)" stroke="#f2ebe0" stroke-width="1"/>
+        <text x="398" y="86" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle">PRE +</text>
+        <text x="398" y="99" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle">POWER AMP</text>
+        <text x="398" y="112" font-family="JetBrains Mono, monospace" font-size="7" fill="#ff6b3d" text-anchor="middle" opacity="0.8">Accuphase E-650</text>
+
+        <!-- Small coral accent border detail -->
+        <rect x="352" y="64" width="92" height="52" rx="4" fill="none" stroke="#ff6b3d" stroke-width="2" opacity="0.35"/>
+
+        <!-- Arrow preamp → splits to left + right speaker -->
+        <!-- split line down then fork -->
+        <line x1="444" y1="90" x2="465" y2="90" stroke="#ff6b3d" stroke-width="1.4" opacity="0.7"/>
+        <line x1="465" y1="90" x2="465" y2="60"  stroke="#ff6b3d" stroke-width="1.4" opacity="0.7"/>
+        <line x1="465" y1="90" x2="465" y2="120" stroke="#ff6b3d" stroke-width="1.4" opacity="0.7"/>
+        <line x1="465" y1="60"  x2="482" y2="60"  stroke="#ff6b3d" stroke-width="1.4" opacity="0.7" marker-end="url(#arr-c)"/>
+        <line x1="465" y1="120" x2="482" y2="120" stroke="#ff6b3d" stroke-width="1.4" opacity="0.7" marker-end="url(#arr-c)"/>
+
+        <!-- ===== LEFT SPEAKER ===== -->
+        <g transform="translate(484, 38)">
+          <!-- Speaker cone outline -->
+          <rect x="0" y="0" width="10" height="44" rx="2" fill="#1a2035" stroke="#ff6b3d" stroke-width="1"/>
+          <!-- Concentric arcs representing speaker cone -->
+          <path d="M10,8  Q22,22 10,36" fill="none" stroke="#ff6b3d" stroke-width="1.2" opacity="0.8"/>
+          <path d="M10,14 Q18,22 10,30" fill="none" stroke="#ff6b3d" stroke-width="0.8" opacity="0.5"/>
+        </g>
+        <text x="491" y="96" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle">L</text>
+
+        <!-- ===== RIGHT SPEAKER ===== -->
+        <g transform="translate(484, 98)">
+          <rect x="0" y="0" width="10" height="44" rx="2" fill="#1a2035" stroke="#ff6b3d" stroke-width="1"/>
+          <path d="M10,8  Q22,22 10,36" fill="none" stroke="#ff6b3d" stroke-width="1.2" opacity="0.8"/>
+          <path d="M10,14 Q18,22 10,30" fill="none" stroke="#ff6b3d" stroke-width="0.8" opacity="0.5"/>
+        </g>
+        <text x="491" y="156" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle">R</text>
+
+        <!-- Speaker labels -->
+        <text x="491" y="175" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Focal</text>
+        <text x="491" y="185" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">Sopra</text>
+        <text x="491" y="195" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">No.3</text>
+
+        <!-- Title at bottom -->
+        <text x="250" y="350" font-family="JetBrains Mono, monospace" font-size="9" fill="#f2ebe0" text-anchor="middle" letter-spacing="1.5" opacity="0.35">АНАЛОГОВЫЙ СИГНАЛЬНЫЙ ТРАКТ</text>
+      </svg>
+      <div class="illus-caption-title">Аналоговый тракт</div>
+      <div class="illus-caption">Vinyl · Reel-to-reel · 2.2 стерео</div>
+    </div>
+
+    <!-- Right: Room acoustic treatment plan -->
+    <div class="illus-item">
+      <svg viewBox="0 0 500 380" xmlns="http://www.w3.org/2000/svg" aria-label="План акустической обработки помещения">
+        <defs>
+          <pattern id="hatch-diffuse" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="8" stroke="#4a7c8a" stroke-width="1.5" opacity="0.7"/>
+          </pattern>
+          <pattern id="room-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f2ebe0" stroke-width="0.2" opacity="0.15"/>
+          </pattern>
+        </defs>
+
+        <rect width="500" height="380" fill="#0f1625" rx="4"/>
+        <rect width="500" height="380" fill="url(#room-grid)" rx="4"/>
+
+        <!-- Room outline — viewed from above -->
+        <rect x="60" y="40" width="350" height="260" rx="3" fill="rgba(74,124,138,0.05)" stroke="#f2ebe0" stroke-width="1.8" opacity="0.55"/>
+
+        <!-- ===== BASS TRAPS (triangles in all 4 corners) ===== -->
+        <!-- Top-left -->
+        <polygon points="60,40 100,40 60,80" fill="#ff6b3d" opacity="0.45"/>
+        <!-- Top-right -->
+        <polygon points="410,40 370,40 410,80" fill="#ff6b3d" opacity="0.45"/>
+        <!-- Bottom-left -->
+        <polygon points="60,300 100,300 60,260" fill="#ff6b3d" opacity="0.45"/>
+        <!-- Bottom-right -->
+        <polygon points="410,300 370,300 410,260" fill="#ff6b3d" opacity="0.45"/>
+
+        <!-- ===== DIFFUSION PANELS (hatched) on side walls ===== -->
+        <!-- Left wall, upper -->
+        <rect x="60" y="105" width="14" height="50" fill="url(#hatch-diffuse)" stroke="#4a7c8a" stroke-width="1"/>
+        <!-- Left wall, lower -->
+        <rect x="60" y="185" width="14" height="50" fill="url(#hatch-diffuse)" stroke="#4a7c8a" stroke-width="1"/>
+        <!-- Right wall, upper -->
+        <rect x="396" y="105" width="14" height="50" fill="url(#hatch-diffuse)" stroke="#4a7c8a" stroke-width="1"/>
+        <!-- Right wall, lower -->
+        <rect x="396" y="185" width="14" height="50" fill="url(#hatch-diffuse)" stroke="#4a7c8a" stroke-width="1"/>
+
+        <!-- ===== ABSORPTION PANELS (solid rect, rear wall & ceiling) ===== -->
+        <!-- Rear wall (bottom of room plan) -->
+        <rect x="115" y="288" width="80" height="12" rx="2" fill="#1e3a47" stroke="#d9e9ec" stroke-width="1" opacity="0.9"/>
+        <rect x="220" y="288" width="60" height="12" rx="2" fill="#1e3a47" stroke="#d9e9ec" stroke-width="1" opacity="0.9"/>
+        <rect x="305" y="288" width="80" height="12" rx="2" fill="#1e3a47" stroke="#d9e9ec" stroke-width="1" opacity="0.9"/>
+        <!-- Ceiling (top of room plan) -->
+        <rect x="140" y="40"  width="80" height="12" rx="2" fill="#1e3a47" stroke="#d9e9ec" stroke-width="1" opacity="0.7"/>
+        <rect x="255" y="40"  width="80" height="12" rx="2" fill="#1e3a47" stroke="#d9e9ec" stroke-width="1" opacity="0.7"/>
+
+        <!-- ===== SPEAKERS (front corners) ===== -->
+        <!-- Left speaker -->
+        <rect x="72"  y="80" width="18" height="30" rx="2" fill="#ff6b3d" opacity="0.9"/>
+        <circle cx="81" cy="87" r="4" fill="#ffb547"/>
+        <circle cx="81" cy="100" r="6" fill="#ff6b3d" stroke="#ffb547" stroke-width="0.8"/>
+        <!-- Right speaker -->
+        <rect x="380" y="80" width="18" height="30" rx="2" fill="#ff6b3d" opacity="0.9"/>
+        <circle cx="389" cy="87" r="4" fill="#ffb547"/>
+        <circle cx="389" cy="100" r="6" fill="#ff6b3d" stroke="#ffb547" stroke-width="0.8"/>
+
+        <!-- Speaker coverage arcs (semi-circles pointing into room) -->
+        <path d="M81,110 Q81,170 81,110" fill="none"/>
+        <path d="M81,110 Q160,130 200,170" fill="none" stroke="#ff6b3d" stroke-width="0.7" opacity="0.2" stroke-dasharray="4,3"/>
+        <path d="M389,110 Q310,130 270,170" fill="none" stroke="#ff6b3d" stroke-width="0.7" opacity="0.2" stroke-dasharray="4,3"/>
+        <!-- Reflection point markers on side walls -->
+        <circle cx="60"  cy="170" r="5" fill="none" stroke="#ffb547" stroke-width="1.2" opacity="0.7"/>
+        <line   x1="60"  y1="165" x2="60"  y2="175" stroke="#ffb547" stroke-width="0.8" opacity="0.7"/>
+        <line   x1="55"  y1="170" x2="65"  y2="170" stroke="#ffb547" stroke-width="0.8" opacity="0.7"/>
+        <circle cx="410" cy="170" r="5" fill="none" stroke="#ffb547" stroke-width="1.2" opacity="0.7"/>
+        <line   x1="410" y1="165" x2="410" y2="175" stroke="#ffb547" stroke-width="0.8" opacity="0.7"/>
+        <line   x1="405" y1="170" x2="415" y2="170" stroke="#ffb547" stroke-width="0.8" opacity="0.7"/>
+
+        <!-- ===== LISTENING POSITION (person icon — circle + cross) ===== -->
+        <!-- Body (cross) -->
+        <line x1="235" y1="215" x2="235" y2="250" stroke="#f2ebe0" stroke-width="2" opacity="0.75"/>
+        <line x1="220" y1="228" x2="250" y2="228" stroke="#f2ebe0" stroke-width="2" opacity="0.75"/>
+        <!-- Head (circle) -->
+        <circle cx="235" cy="207" r="8" fill="none" stroke="#f2ebe0" stroke-width="1.8" opacity="0.75"/>
+        <!-- Listening position label -->
+        <text x="235" y="268" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.5">МЕСТО</text>
+        <text x="235" y="278" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.5">ПРОСЛУШИВАНИЯ</text>
+
+        <!-- === LABELS === -->
+        <!-- Bass traps label -->
+        <text x="235" y="332" font-family="JetBrains Mono, monospace" font-size="8" fill="#ff6b3d" text-anchor="middle" letter-spacing="1" opacity="0.8">▲ Бас-трапы</text>
+        <!-- Diffusion label -->
+        <text x="98"  y="135" font-family="JetBrains Mono, monospace" font-size="7" fill="#4a7c8a" text-anchor="start" opacity="0.85" transform="rotate(-90,98,135)">Диффузия</text>
+        <!-- Absorption label -->
+        <text x="155" y="310" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#d9e9ec" text-anchor="start" opacity="0.7">Поглощение</text>
+        <!-- Speaker labels -->
+        <text x="81"  y="72"  font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.9">SPK L</text>
+        <text x="389" y="72"  font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ff6b3d" text-anchor="middle" opacity="0.9">SPK R</text>
+
+        <!-- Dimension hint: RT60 -->
+        <line x1="90" y1="355" x2="410" y2="355" stroke="#f2ebe0" stroke-width="0.6" opacity="0.2"/>
+        <text x="250" y="370" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="middle" opacity="0.35" letter-spacing="1.5">RT60 = 0.28 СЕК</text>
+      </svg>
+      <div class="illus-caption-title">Акустическая обработка</div>
+      <div class="illus-caption">Бас-трапы · диффузия · поглощение</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SECTION 02: РЕШЕНИЕ -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">02 / Решение</div>
+    <div class="section-body">
+      <p class="case-lead">Rega, Focal, и полная <span class="ital">аналоговая свобода</span>.</p>
+      <p class="case-text">Основа тракта — проигрыватель Rega Planar 10 с картриджем Apheta 3 через фонокорректор Musical Fidelity Nu-Vista Vinyl. Усилительный тракт — Accuphase E-650. Акустика — Focal Sopra No.3 на специально изготовленных подставках с развязкой от пола.</p>
+      <p class="case-text">Акустическая обработка — авторская: бас-трапы в углах сшиты на заказ, диффузорные панели интегрированы в дизайн стен как декоративный элемент. Время реверберации 0,28 секунды — идеал для прослушивания.</p>
+      <p class="case-text">Результат: 104 дБ при полной чистоте на 1 метре. Соседи слышат меньше 42 дБ — ниже фонового шума жилого дома.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ILLUSTRATION BLOCK 2: Frequency response -->
+<div class="illus-block illus-block--padded">
+  <div class="illus-single">
+    <svg viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg" aria-label="АЧХ системы после настройки">
+      <defs>
+        <linearGradient id="fill-optimized" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#ff6b3d" stop-opacity="0.25"/>
+          <stop offset="100%" stop-color="#ff6b3d" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="fill-baseline" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#4a7c8a" stop-opacity="0.12"/>
+          <stop offset="100%" stop-color="#4a7c8a" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="1200" height="220" fill="#0f1625" rx="4"/>
+
+      <!-- Title -->
+      <text x="600" y="28" font-family="JetBrains Mono, monospace" font-size="11" fill="#f2ebe0" text-anchor="middle" letter-spacing="2" opacity="0.6">АЧХ СИСТЕМЫ ПОСЛЕ НАСТРОЙКИ</text>
+
+      <!-- === dB scale (y axis) === -->
+      <!-- Axis line -->
+      <line x1="80" y1="42" x2="80" y2="185" stroke="#f2ebe0" stroke-width="0.5" opacity="0.3"/>
+
+      <!-- +6 dB -->
+      <line x1="80"   y1="50"  x2="1140" y2="50"  stroke="#f2ebe0" stroke-width="0.4" stroke-dasharray="3,6" opacity="0.15"/>
+      <text x="72"  y="54"  font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="end" opacity="0.45">+6</text>
+      <!-- +3 dB -->
+      <line x1="80"   y1="73"  x2="1140" y2="73"  stroke="#f2ebe0" stroke-width="0.4" stroke-dasharray="3,6" opacity="0.12"/>
+      <text x="72"  y="77"  font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="end" opacity="0.45">+3</text>
+      <!-- 0 dB — reference line -->
+      <line x1="80"   y1="97"  x2="1140" y2="97"  stroke="#f2ebe0" stroke-width="0.8" opacity="0.35"/>
+      <text x="72"  y="101" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="end" opacity="0.7">0</text>
+      <!-- -3 dB -->
+      <line x1="80"   y1="121" x2="1140" y2="121" stroke="#f2ebe0" stroke-width="0.4" stroke-dasharray="3,6" opacity="0.12"/>
+      <text x="72"  y="125" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="end" opacity="0.45">-3</text>
+      <!-- -6 dB -->
+      <line x1="80"   y1="145" x2="1140" y2="145" stroke="#f2ebe0" stroke-width="0.4" stroke-dasharray="3,6" opacity="0.15"/>
+      <text x="72"  y="149" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" text-anchor="end" opacity="0.45">-6</text>
+
+      <!-- dB label -->
+      <text x="20" y="100" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.4" text-anchor="middle" transform="rotate(-90,20,100)">дБ</text>
+
+      <!-- ±3 dB target window shaded band -->
+      <rect x="80" y="73" width="1060" height="48" fill="#f2ebe0" opacity="0.04" rx="2"/>
+
+      <!-- === BASELINE curve (dotted, teal, before correction) === -->
+      <!-- Fill area -->
+      <path d="M80,140 C120,130 160,115 200,125 C240,135 280,160 320,145 C360,130 400,85 440,95 C480,105 520,88 560,97 C600,106 640,93 680,100 C720,107 760,92 800,102 C840,112 880,95 920,108 C960,121 1000,88 1040,95 C1080,102 1120,115 1140,120 L1140,185 L80,185 Z"
+            fill="url(#fill-baseline)"/>
+      <!-- Curve line -->
+      <path d="M80,140 C120,130 160,115 200,125 C240,135 280,160 320,145 C360,130 400,85 440,95 C480,105 520,88 560,97 C600,106 640,93 680,100 C720,107 760,92 800,102 C840,112 880,95 920,108 C960,121 1000,88 1040,95 C1080,102 1120,115 1140,120"
+            fill="none" stroke="#4a7c8a" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.7"/>
+
+      <!-- === OPTIMIZED curve (smooth, coral, after tuning) === -->
+      <!-- Fill area -->
+      <path d="M80,115 C100,108 130,100 180,97 C230,94 300,97 380,96 C460,95 540,97 620,96 C700,95 780,97 860,96 C940,95 1020,97 1080,100 C1110,102 1130,104 1140,107 L1140,185 L80,185 Z"
+            fill="url(#fill-optimized)"/>
+      <!-- Curve line -->
+      <path d="M80,115 C100,108 130,100 180,97 C230,94 300,97 380,96 C460,95 540,97 620,96 C700,95 780,97 860,96 C940,95 1020,97 1080,100 C1110,102 1130,104 1140,107"
+            fill="none" stroke="#ff6b3d" stroke-width="2.2" opacity="0.9"/>
+
+      <!-- === X-axis frequency labels === -->
+      <line x1="80"   y1="185" x2="1140" y2="185" stroke="#f2ebe0" stroke-width="0.5" opacity="0.3"/>
+
+      <!-- 20 Hz -->
+      <line x1="80"   y1="183" x2="80"   y2="190" stroke="#f2ebe0" stroke-width="0.8" opacity="0.4"/>
+      <text x="80"   y="202" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle" opacity="0.5">20 Гц</text>
+
+      <!-- 100 Hz -->
+      <line x1="254"  y1="183" x2="254"  y2="190" stroke="#f2ebe0" stroke-width="0.8" opacity="0.4"/>
+      <text x="254"  y="202" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle" opacity="0.5">100 Гц</text>
+
+      <!-- 1 kHz -->
+      <line x1="610"  y1="183" x2="610"  y2="190" stroke="#f2ebe0" stroke-width="0.8" opacity="0.4"/>
+      <text x="610"  y="202" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle" opacity="0.5">1 кГц</text>
+
+      <!-- 10 kHz -->
+      <line x1="966"  y1="183" x2="966"  y2="190" stroke="#f2ebe0" stroke-width="0.8" opacity="0.4"/>
+      <text x="966"  y="202" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle" opacity="0.5">10 кГц</text>
+
+      <!-- 20 kHz -->
+      <line x1="1140" y1="183" x2="1140" y2="190" stroke="#f2ebe0" stroke-width="0.8" opacity="0.4"/>
+      <text x="1140" y="202" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle" opacity="0.5">20 кГц</text>
+
+      <!-- === Legend === -->
+      <line x1="860" y1="24" x2="890" y2="24" stroke="#ff6b3d" stroke-width="2.5" opacity="0.9"/>
+      <text x="896" y="28" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" opacity="0.85">после настройки</text>
+      <line x1="1010" y1="24" x2="1040" y2="24" stroke="#4a7c8a" stroke-width="1.8" stroke-dasharray="5,3" opacity="0.7"/>
+      <text x="1046" y="28" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#4a7c8a" opacity="0.7">без коррекции</text>
+    </svg>
+  </div>
+</div>
+
+<!-- SPECS GRID -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">Характеристики</div>
+    <div class="section-body">
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="sp-label">Проигрыватель</div>
+          <div class="sp-val">Rega Planar 10</div>
+          <div class="sp-sub">+ картридж Apheta 3</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Фонокорректор</div>
+          <div class="sp-val">MF Nu-Vista Vinyl</div>
+          <div class="sp-sub">Musical Fidelity</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Предусилитель + УМ</div>
+          <div class="sp-val">Accuphase E-650</div>
+          <div class="sp-sub">Интегральный</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Акустика</div>
+          <div class="sp-val">Focal Sopra No.3</div>
+          <div class="sp-sub">Напольные, пара</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">RT60 (время реверберации)</div>
+          <div class="sp-val">0,28 сек</div>
+          <div class="sp-sub">Идеал для Hi-Fi</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Максимальное SPL</div>
+          <div class="sp-val">104 дБ</div>
+          <div class="sp-sub">@ 1 м, чистота сохраняется</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT LIST -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">Оборудование</div>
+    <div class="section-body">
+      <ul class="equip-list">
+        <li>
+          <span class="eq-name">Rega Planar 10</span>
+          <span class="eq-role">Проигрыватель пластинок</span>
+        </li>
+        <li>
+          <span class="eq-name">Focal Sopra No.3 × 2</span>
+          <span class="eq-role">Напольная акустика</span>
+        </li>
+        <li>
+          <span class="eq-name">REL Carbon Limited × 2</span>
+          <span class="eq-role">Сабвуферы</span>
+        </li>
+        <li>
+          <span class="eq-name">Accuphase E-650</span>
+          <span class="eq-role">Интегральный усилитель</span>
+        </li>
+        <li>
+          <span class="eq-name">Musical Fidelity Nu-Vista Vinyl</span>
+          <span class="eq-role">Фонокорректор</span>
+        </li>
+        <li>
+          <span class="eq-name">Tascam BR-20</span>
+          <span class="eq-role">Катушечный магнитофон</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT QUOTE -->
+<div class="client-quote">
+  <p class="cq-text">«Первый раз в жизни я заплакал от того, как зазвучал Lee Morgan на виниле. Это не аппаратура — это инструмент.»</p>
+  <div class="cq-author">— Леван</div>
+</div>
+
+<!-- NEXT PROJECT -->
+<a href="/portfolio/a-house.html" class="next-project">
+  <div>
+    <div class="np-label">Следующий проект</div>
+    <div class="np-title">Архитектурный <span class="ital">A-house</span></div>
+  </div>
+  <div class="np-arrow">→</div>
+</a>
+
+<!-- CTA -->
+<section class="case-cta">
+  <h3>Хотите <span class="ital">настоящий</span> звук?</h3>
+  <p>Проектируем Hi-Fi и домашние студии с нуля.</p>
+  <a href="/#контакты" class="btn">Начать проект →</a>
+</section>
+
+<footer>
+  <div>© 2026 · Акустическое бюро ВОЛНА</div>
+  <a href="/portfolio/">← Портфолио</a>
+  <div>〜 buro-volna.ru</div>
+</footer>
+
+</body>
+</html>

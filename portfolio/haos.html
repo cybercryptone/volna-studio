@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Хаос на Покровке — Портфолио ВОЛНА</title>
+  <meta name="description" content="Звуковая инсталляция для двухэтажного клуба «Хаос на Покровке». Полная изоляция между этажами, независимые системы."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../portfolio.css"/>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo"><span class="logo-tilde">〜</span> ВОЛНА</a>
+  <div class="nav-links">
+    <a href="/#услуги">Услуги</a>
+    <a href="/portfolio/" class="active">Портфолио</a>
+    <a href="/#основатель">Основатель</a>
+    <a href="/blog/">Журнал</a>
+  </div>
+  <a href="/#контакты" class="nav-cta">Связаться</a>
+</nav>
+
+<!-- HERO -->
+<section class="case-hero">
+  <div class="case-hero-bg">
+    <svg viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="haos-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#0a0e1a"/>
+          <stop offset="60%" stop-color="#050c12"/>
+          <stop offset="100%" stop-color="#080e1a"/>
+        </linearGradient>
+        <linearGradient id="haos-teal-fade" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#d9e9ec" stop-opacity="0"/>
+          <stop offset="30%" stop-color="#5ba4b5" stop-opacity="0.5"/>
+          <stop offset="70%" stop-color="#d9e9ec" stop-opacity="0.3"/>
+          <stop offset="100%" stop-color="#d9e9ec" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <rect width="1440" height="600" fill="url(#haos-bg)"/>
+
+      <!-- Energetic, jagged waveforms — Haos character -->
+      <!-- Main aggressive waveform -->
+      <polyline points="0,300 60,260 90,340 130,200 170,380 210,170 250,390 290,210 330,360 370,190 410,380 450,220 490,350 530,180 570,400 610,160 650,390 690,200 730,360 770,190 810,380 850,210 890,340 930,230 970,310 1020,250 1080,320 1140,240 1200,310 1260,260 1320,300 1440,300"
+            fill="none" stroke="url(#haos-teal-fade)" stroke-width="2.5" opacity="0.7"/>
+
+      <!-- Second waveform — offset, teal -->
+      <polyline points="0,320 80,270 120,360 160,240 200,370 240,200 280,380 320,230 360,350 400,210 440,360 480,240 520,330 560,210 600,370 640,190 680,360 720,230 760,340 800,210 840,350 880,240 920,320 960,260 1000,330 1060,280 1120,340 1200,280 1280,330 1380,290 1440,320"
+            fill="none" stroke="#d9e9ec" stroke-width="1" opacity="0.2"/>
+
+      <!-- Bass sub fill — energetic bottom -->
+      <path d="M0,500 L80,460 L160,520 L240,440 L320,530 L400,450 L480,510 L560,460 L640,520 L720,450 L800,510 L880,460 L960,520 L1040,460 L1120,510 L1200,460 L1280,500 L1440,480 L1440,600 L0,600 Z"
+            fill="#d9e9ec" opacity="0.03"/>
+
+      <!-- Vertical frequency burst lines — club energy -->
+      <g opacity="0.12">
+        <!-- Left burst -->
+        <line x1="120" y1="600" x2="100" y2="350" stroke="#d9e9ec" stroke-width="1.5"/>
+        <line x1="140" y1="600" x2="150" y2="300" stroke="#d9e9ec" stroke-width="1"/>
+        <line x1="160" y1="600" x2="140" y2="380" stroke="#d9e9ec" stroke-width="0.8"/>
+        <!-- Center-left burst -->
+        <line x1="500" y1="600" x2="480" y2="250" stroke="#5ba4b5" stroke-width="1.5"/>
+        <line x1="520" y1="600" x2="530" y2="200" stroke="#5ba4b5" stroke-width="1"/>
+        <line x1="540" y1="600" x2="510" y2="300" stroke="#5ba4b5" stroke-width="0.8"/>
+        <!-- Right burst -->
+        <line x1="1100" y1="600" x2="1090" y2="280" stroke="#d9e9ec" stroke-width="1.5"/>
+        <line x1="1120" y1="600" x2="1140" y2="220" stroke="#d9e9ec" stroke-width="1"/>
+        <line x1="1140" y1="600" x2="1110" y2="330" stroke="#d9e9ec" stroke-width="0.8"/>
+      </g>
+
+      <!-- Circular sub pulse rings -->
+      <circle cx="720" cy="300" r="80" fill="none" stroke="#5ba4b5" stroke-width="0.8" opacity="0.1"/>
+      <circle cx="720" cy="300" r="150" fill="none" stroke="#5ba4b5" stroke-width="0.6" opacity="0.07"/>
+      <circle cx="720" cy="300" r="240" fill="none" stroke="#d9e9ec" stroke-width="0.5" opacity="0.05"/>
+
+      <!-- Isolation band across middle — visual metaphor -->
+      <rect x="0" y="285" width="1440" height="30" fill="#0a0e1a" opacity="0.5"/>
+      <text x="720" y="305" font-family="JetBrains Mono, monospace" font-size="10" fill="#5ba4b5" text-anchor="middle" letter-spacing="3" opacity="0.25">ИЗОЛЯЦИОННЫЙ ПАКЕТ</text>
+    </svg>
+  </div>
+  <div class="case-hero-overlay"></div>
+  <div class="case-hero-content">
+    <div class="case-hero-kicker">Портфолио · 2023 · Клуб</div>
+    <h1 class="case-hero-title">Хаос <span class="ital">на Покровке</span></h1>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item">
+    <div class="s-label">Площадь</div>
+    <div class="s-val">600 <span class="c">м²</span></div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Этажей</div>
+    <div class="s-val">2</div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Изоляция</div>
+    <div class="s-val">−38 <span class="c">дБ между уровнями</span></div>
+  </div>
+  <div class="stat-item">
+    <div class="s-label">Город</div>
+    <div class="s-val">Москва<span class="c">, Покровка</span></div>
+  </div>
+</div>
+
+<!-- SECTION 01: ЗАДАЧА -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">01 / Задача</div>
+    <div class="section-body">
+      <p class="case-lead"><span class="ital">Два этажа, два характера, нулевой перетёк звука между ними.</span></p>
+      <p class="case-text">Хаос — клуб с историей и архитектурой особняка. Первый этаж — лаундж-бар с живой музыкой и разговорной атмосферой. Второй — танцпол с мощным саббасом. Задача: обеспечить работу обоих этажей одновременно без взаимного проникновения звука. Здание историческое — сверлить перекрытия по минимуму.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ILLUSTRATION BLOCK 1: Cross-section + Floor plan 2nd floor -->
+<div class="illus-block illus-block--padded">
+  <div class="illus-two-col">
+
+    <!-- Left: Building cross-section -->
+    <div class="illus-item">
+      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-label="Разрез здания клуба Хаос на Покровке">
+        <defs>
+          <pattern id="hatch-concrete" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <line x1="0" y1="0" x2="0" y2="8" stroke="#f2ebe0" stroke-width="0.5" opacity="0.3"/>
+          </pattern>
+          <pattern id="dots-wool" width="6" height="6" patternUnits="userSpaceOnUse">
+            <circle cx="3" cy="3" r="0.8" fill="#d9e9ec" opacity="0.4"/>
+          </pattern>
+        </defs>
+
+        <rect width="600" height="400" fill="#0f1625" rx="4"/>
+
+        <!-- Building outer walls -->
+        <rect x="60" y="20" width="480" height="360" rx="2" fill="none" stroke="#f2ebe0" stroke-width="1.5" opacity="0.25"/>
+
+        <!-- === FLOOR 2 — КЛУБ === -->
+        <rect x="60" y="20" width="480" height="155" rx="2" fill="rgba(255,107,61,0.07)" stroke="rgba(255,107,61,0.25)" stroke-width="1"/>
+        <!-- Floor 2 label -->
+        <text x="300" y="48" font-family="JetBrains Mono, monospace" font-size="10" fill="#ff6b3d" text-anchor="middle" letter-spacing="2">КЛУБ · 2 ЭТАЖ</text>
+        <text x="300" y="62" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle" opacity="0.6">танцпол · до 110 дБ</text>
+
+        <!-- Sound wave squiggles on floor 2 — trapped inside -->
+        <g opacity="0.5">
+          <path d="M120,100 C130,90 140,110 150,100 C160,90 170,110 180,100 C190,90 200,110 210,100" fill="none" stroke="#ff6b3d" stroke-width="1.2"/>
+          <path d="M250,85 C262,73 276,97 290,85 C304,73 318,97 332,85 C346,73 360,97 374,85" fill="none" stroke="#ff6b3d" stroke-width="1.2"/>
+          <path d="M400,100 C413,88 427,112 441,100 C455,88 469,112 480,100" fill="none" stroke="#ff6b3d" stroke-width="1.2"/>
+          <!-- Sub wave — thick, low frequency -->
+          <path d="M100,130 C140,108 180,152 220,130 C260,108 300,152 340,130 C380,108 420,152 460,130 C480,119 510,141 520,130" fill="none" stroke="#ffb547" stroke-width="2" opacity="0.6"/>
+        </g>
+
+        <!-- Speaker positions on floor 2 -->
+        <g fill="#ff6b3d">
+          <!-- Left main speaker -->
+          <circle cx="105" cy="108" r="9" fill="rgba(255,107,61,0.2)" stroke="#ff6b3d" stroke-width="1.5"/>
+          <circle cx="105" cy="108" r="3"/>
+          <!-- Right main speaker -->
+          <circle cx="495" cy="108" r="9" fill="rgba(255,107,61,0.2)" stroke="#ff6b3d" stroke-width="1.5"/>
+          <circle cx="495" cy="108" r="3"/>
+          <!-- Subwoofers — larger circles in corners -->
+          <circle cx="100" cy="155" r="11" fill="rgba(255,181,71,0.15)" stroke="#ffb547" stroke-width="1.5"/>
+          <circle cx="500" cy="155" r="11" fill="rgba(255,181,71,0.15)" stroke="#ffb547" stroke-width="1.5"/>
+          <text x="100" y="159" font-family="JetBrains Mono, monospace" font-size="7" fill="#ffb547" text-anchor="middle">SUB</text>
+          <text x="500" y="159" font-family="JetBrains Mono, monospace" font-size="7" fill="#ffb547" text-anchor="middle">SUB</text>
+        </g>
+
+        <!-- === ISOLATION LAYER === -->
+        <rect x="60" y="175" width="480" height="30" fill="#1a2035" stroke="#d9e9ec" stroke-width="1"/>
+        <rect x="60" y="175" width="480" height="30" fill="url(#dots-wool)" opacity="0.7"/>
+        <text x="300" y="194" font-family="JetBrains Mono, monospace" font-size="9" fill="#d9e9ec" text-anchor="middle" letter-spacing="1.5">ИЗОЛЯЦИОННЫЙ ПАКЕТ −38 дБ</text>
+
+        <!-- Sound waves STOPPED at isolation layer -->
+        <g opacity="0.35">
+          <path d="M120,173 C130,166 140,180 145,173" fill="none" stroke="#ff6b3d" stroke-width="1" stroke-dasharray="2,2"/>
+          <path d="M280,173 C290,166 300,180 305,173" fill="none" stroke="#ff6b3d" stroke-width="1" stroke-dasharray="2,2"/>
+          <path d="M450,173 C460,166 470,180 475,173" fill="none" stroke="#ff6b3d" stroke-width="1" stroke-dasharray="2,2"/>
+          <!-- X marks indicating blocked -->
+          <line x1="115" y1="168" x2="125" y2="178" stroke="#d9e9ec" stroke-width="1.5" opacity="0.8"/>
+          <line x1="125" y1="168" x2="115" y2="178" stroke="#d9e9ec" stroke-width="1.5" opacity="0.8"/>
+          <line x1="295" y1="168" x2="305" y2="178" stroke="#d9e9ec" stroke-width="1.5" opacity="0.8"/>
+          <line x1="305" y1="168" x2="295" y2="178" stroke="#d9e9ec" stroke-width="1.5" opacity="0.8"/>
+        </g>
+
+        <!-- === FLOOR 1 — ЛАУНДЖ === -->
+        <rect x="60" y="205" width="480" height="175" rx="2" fill="rgba(217,233,236,0.04)" stroke="rgba(217,233,236,0.2)" stroke-width="1"/>
+        <text x="300" y="236" font-family="JetBrains Mono, monospace" font-size="10" fill="#d9e9ec" text-anchor="middle" letter-spacing="2">ЛАУНДЖ · 1 ЭТАЖ</text>
+        <text x="300" y="250" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#d9e9ec" text-anchor="middle" opacity="0.6">живая музыка · 75–85 дБ</text>
+
+        <!-- Calm waves on floor 1 -->
+        <g opacity="0.4">
+          <path d="M140,290 C160,280 180,300 200,290 C220,280 240,300 260,290 C280,280 300,300 320,290 C340,280 360,300 380,290 C400,280 420,300 440,290" fill="none" stroke="#d9e9ec" stroke-width="1"/>
+          <path d="M150,315 C175,308 200,322 225,315 C250,308 275,322 300,315 C325,308 350,322 375,315 C400,308 425,322 450,315" fill="none" stroke="#d9e9ec" stroke-width="0.8"/>
+        </g>
+
+        <!-- Floor 1 speakers — quieter -->
+        <g>
+          <circle cx="155" cy="275" r="7" fill="rgba(217,233,236,0.15)" stroke="#d9e9ec" stroke-width="1.2"/>
+          <circle cx="155" cy="275" r="2.5" fill="#d9e9ec"/>
+          <circle cx="445" cy="275" r="7" fill="rgba(217,233,236,0.15)" stroke="#d9e9ec" stroke-width="1.2"/>
+          <circle cx="445" cy="275" r="2.5" fill="#d9e9ec"/>
+          <circle cx="300" cy="260" r="6" fill="rgba(217,233,236,0.1)" stroke="#d9e9ec" stroke-width="1"/>
+          <circle cx="300" cy="260" r="2" fill="#d9e9ec" opacity="0.7"/>
+        </g>
+
+        <!-- Floor labels on side -->
+        <text x="44" y="110" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.4" text-anchor="middle" transform="rotate(-90,44,110)">2 ЭТ.</text>
+        <text x="44" y="295" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.4" text-anchor="middle" transform="rotate(-90,44,295)">1 ЭТ.</text>
+      </svg>
+      <div class="illus-caption-title">Разрез здания</div>
+      <div class="illus-caption">Изоляция между уровнями</div>
+    </div>
+
+    <!-- Right: Top-down floor plan of 2nd floor -->
+    <div class="illus-item">
+      <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" aria-label="Расстановка акустики на танцполе второго этажа клуба Хаос">
+        <defs>
+          <pattern id="grid-haos" width="30" height="30" patternUnits="userSpaceOnUse">
+            <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#d9e9ec" stroke-width="0.3" opacity="0.2"/>
+          </pattern>
+          <radialGradient id="sub-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ffb547" stop-opacity="0.25"/>
+            <stop offset="100%" stop-color="#ffb547" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="main-glow-l" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ff6b3d" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#ff6b3d" stop-opacity="0"/>
+          </radialGradient>
+          <radialGradient id="main-glow-r" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ff6b3d" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#ff6b3d" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+
+        <rect width="600" height="400" fill="#0f1625" rx="4"/>
+        <rect width="600" height="400" fill="url(#grid-haos)" rx="4"/>
+
+        <!-- Room outline — танцпол -->
+        <rect x="40" y="30" width="520" height="330" rx="3" fill="rgba(255,107,61,0.05)" stroke="#ff6b3d" stroke-width="1.5" opacity="0.7"/>
+        <text x="300" y="55" font-family="JetBrains Mono, monospace" font-size="11" fill="#ff6b3d" text-anchor="middle" letter-spacing="2">ТАНЦПОЛ · 2 ЭТАЖ</text>
+
+        <!-- Coverage arcs from MAIN L -->
+        <path d="M85,100 L280,195 L280,205 L85,290" fill="rgba(255,107,61,0.04)" stroke="rgba(255,107,61,0.15)" stroke-width="0.8"/>
+        <!-- Coverage arcs from MAIN R -->
+        <path d="M515,100 L320,195 L320,205 L515,290" fill="rgba(255,107,61,0.04)" stroke="rgba(255,107,61,0.15)" stroke-width="0.8"/>
+
+        <!-- MAIN L — left PA cluster -->
+        <circle cx="80" cy="195" r="50" fill="url(#main-glow-l)"/>
+        <rect x="55" y="165" width="50" height="60" rx="3" fill="rgba(255,107,61,0.15)" stroke="#ff6b3d" stroke-width="1.5"/>
+        <text x="80" y="191" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle">MAIN L</text>
+        <text x="80" y="204" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.5">Evo 7</text>
+        <circle cx="80" cy="195" r="6" fill="#ff6b3d"/>
+
+        <!-- MAIN R — right PA cluster -->
+        <circle cx="520" cy="195" r="50" fill="url(#main-glow-r)"/>
+        <rect x="495" y="165" width="50" height="60" rx="3" fill="rgba(255,107,61,0.15)" stroke="#ff6b3d" stroke-width="1.5"/>
+        <text x="520" y="191" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle">MAIN R</text>
+        <text x="520" y="204" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#f2ebe0" text-anchor="middle" opacity="0.5">Evo 7</text>
+        <circle cx="520" cy="195" r="6" fill="#ff6b3d"/>
+
+        <!-- SUB × 4 in corners -->
+        <g>
+          <!-- TL sub -->
+          <circle cx="100" cy="80" r="36" fill="url(#sub-glow)"/>
+          <circle cx="100" cy="80" r="18" fill="rgba(255,181,71,0.15)" stroke="#ffb547" stroke-width="1.5"/>
+          <text x="100" y="76" font-family="JetBrains Mono, monospace" font-size="8" fill="#ffb547" text-anchor="middle">SUB</text>
+          <text x="100" y="88" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle">F218</text>
+
+          <!-- TR sub -->
+          <circle cx="500" cy="80" r="36" fill="url(#sub-glow)"/>
+          <circle cx="500" cy="80" r="18" fill="rgba(255,181,71,0.15)" stroke="#ffb547" stroke-width="1.5"/>
+          <text x="500" y="76" font-family="JetBrains Mono, monospace" font-size="8" fill="#ffb547" text-anchor="middle">SUB</text>
+          <text x="500" y="88" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle">F218</text>
+
+          <!-- BL sub -->
+          <circle cx="100" cy="320" r="36" fill="url(#sub-glow)"/>
+          <circle cx="100" cy="320" r="18" fill="rgba(255,181,71,0.15)" stroke="#ffb547" stroke-width="1.5"/>
+          <text x="100" y="316" font-family="JetBrains Mono, monospace" font-size="8" fill="#ffb547" text-anchor="middle">SUB</text>
+          <text x="100" y="328" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle">F218</text>
+
+          <!-- BR sub -->
+          <circle cx="500" cy="320" r="36" fill="url(#sub-glow)"/>
+          <circle cx="500" cy="320" r="18" fill="rgba(255,181,71,0.15)" stroke="#ffb547" stroke-width="1.5"/>
+          <text x="500" y="316" font-family="JetBrains Mono, monospace" font-size="8" fill="#ffb547" text-anchor="middle">SUB</text>
+          <text x="500" y="328" font-family="JetBrains Mono, monospace" font-size="7.5" fill="#ffb547" text-anchor="middle">F218</text>
+        </g>
+
+        <!-- FILL speakers × 4 — center ceiling -->
+        <g fill="#d9e9ec">
+          <circle cx="220" cy="145" r="14" fill="rgba(217,233,236,0.08)" stroke="#d9e9ec" stroke-width="1"/>
+          <text x="220" y="141" font-family="JetBrains Mono, monospace" font-size="7" fill="#d9e9ec" text-anchor="middle">FILL</text>
+          <circle cx="220" cy="145" r="4"/>
+
+          <circle cx="380" cy="145" r="14" fill="rgba(217,233,236,0.08)" stroke="#d9e9ec" stroke-width="1"/>
+          <text x="380" y="141" font-family="JetBrains Mono, monospace" font-size="7" fill="#d9e9ec" text-anchor="middle">FILL</text>
+          <circle cx="380" cy="145" r="4"/>
+
+          <circle cx="220" cy="255" r="14" fill="rgba(217,233,236,0.08)" stroke="#d9e9ec" stroke-width="1"/>
+          <text x="220" y="251" font-family="JetBrains Mono, monospace" font-size="7" fill="#d9e9ec" text-anchor="middle">FILL</text>
+          <circle cx="220" cy="255" r="4"/>
+
+          <circle cx="380" cy="255" r="14" fill="rgba(217,233,236,0.08)" stroke="#d9e9ec" stroke-width="1"/>
+          <text x="380" y="251" font-family="JetBrains Mono, monospace" font-size="7" fill="#d9e9ec" text-anchor="middle">FILL</text>
+          <circle cx="380" cy="255" r="4"/>
+        </g>
+
+        <!-- Mixing position (FOH) -->
+        <rect x="265" y="330" width="70" height="30" rx="3" fill="rgba(217,233,236,0.1)" stroke="#d9e9ec" stroke-width="1" opacity="0.7"/>
+        <text x="300" y="349" font-family="JetBrains Mono, monospace" font-size="8" fill="#d9e9ec" text-anchor="middle">FOH</text>
+
+        <!-- Label: SUB × 4 count -->
+        <text x="300" y="375" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" text-anchor="middle" opacity="0.4">SUB × 4 · FILL × 4 · MAIN L/R</text>
+      </svg>
+      <div class="illus-caption-title">Расстановка на 2 этаже</div>
+      <div class="illus-caption">Line-array · 4 сабвуфера</div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SECTION 02: РЕШЕНИЕ -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">02 / Решение</div>
+    <div class="section-body">
+      <p class="case-lead"><span class="ital">Виброизоляция фундамента. Раздельные системы. Звук, который знает своё место.</span></p>
+      <p class="case-text">Сабвуферы на 2 этаже подвешены на виброизолирующих кронштейнах — ни один Гц не уходит в перекрытие. Под полом второго этажа уложен акустический пакет из минеральной ваты и специального мата. Первый этаж получил собственную систему: акустика для живых выступлений и разговорного режима. Оба этажа управляются независимо, но с возможностью синхронной работы для общих мероприятий.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ILLUSTRATION BLOCK 2: Isolation detail cross-section -->
+<div class="illus-block illus-block--padded">
+  <div class="illus-single">
+    <svg viewBox="0 0 1200 280" xmlns="http://www.w3.org/2000/svg" aria-label="Схема акустической изоляции перекрытия клуба Хаос">
+      <defs>
+        <pattern id="concrete-hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="10" stroke="#f2ebe0" stroke-width="0.6" opacity="0.25"/>
+        </pattern>
+        <pattern id="wool-dots" width="6" height="6" patternUnits="userSpaceOnUse">
+          <circle cx="3" cy="3" r="1.2" fill="#d9e9ec" opacity="0.35"/>
+        </pattern>
+        <pattern id="mat-lines" width="8" height="8" patternUnits="userSpaceOnUse">
+          <line x1="0" y1="4" x2="8" y2="4" stroke="#5ba4b5" stroke-width="0.8" opacity="0.4"/>
+        </pattern>
+        <pattern id="finish-lines" width="12" height="12" patternUnits="userSpaceOnUse">
+          <line x1="0" y1="6" x2="12" y2="6" stroke="#f2ebe0" stroke-width="1.5" opacity="0.15"/>
+        </pattern>
+      </defs>
+
+      <rect width="1200" height="280" fill="#0f1625" rx="4"/>
+
+      <!-- Left zone: dB source label -->
+      <text x="55" y="68" font-family="JetBrains Mono, monospace" font-size="11" fill="#ff6b3d" text-anchor="middle">110 dB</text>
+      <text x="55" y="84" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#ff6b3d" text-anchor="middle" opacity="0.7">источник</text>
+      <!-- Downward arrow source -->
+      <line x1="55" y1="92" x2="55" y2="120" stroke="#ff6b3d" stroke-width="1.5" opacity="0.6"/>
+      <polygon points="50,120 60,120 55,132" fill="#ff6b3d" opacity="0.6"/>
+
+      <!-- Right zone: dB result label -->
+      <text x="1145" y="210" font-family="JetBrains Mono, monospace" font-size="11" fill="#5ba4b5" text-anchor="middle">72 dB</text>
+      <text x="1145" y="226" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#5ba4b5" text-anchor="middle" opacity="0.7">результат</text>
+      <!-- Downward arrow result -->
+      <line x1="1145" y1="148" x2="1145" y2="198" stroke="#5ba4b5" stroke-width="1.5" opacity="0.6"/>
+      <polygon points="1140,148 1150,148 1145,136" fill="#5ba4b5" opacity="0.6"/>
+
+      <!-- Delta label in center -->
+      <text x="600" y="148" font-family="JetBrains Mono, monospace" font-size="20" fill="#d9e9ec" text-anchor="middle" font-weight="500">Δ −38 дБ</text>
+      <text x="600" y="168" font-family="JetBrains Mono, monospace" font-size="9" fill="#d9e9ec" text-anchor="middle" opacity="0.5" letter-spacing="2">АКУСТИЧЕСКАЯ ИЗОЛЯЦИЯ ПЕРЕКРЫТИЯ</text>
+
+      <!-- === LAYER STACK (horizontal cross-section) === -->
+      <!-- Layer 1: Concrete slab (top) -->
+      <rect x="100" y="25" width="1000" height="28" fill="#2a2f3e" stroke="#f2ebe0" stroke-width="0.8" opacity="0.9"/>
+      <rect x="100" y="25" width="1000" height="28" fill="url(#concrete-hatch)"/>
+      <text x="120" y="44" font-family="JetBrains Mono, monospace" font-size="9" fill="#f2ebe0" opacity="0.7">ЖЕЛЕЗОБЕТОННОЕ ПЕРЕКРЫТИЕ</text>
+
+      <!-- Arrow label right -->
+      <line x1="1108" y1="39" x2="1125" y2="39" stroke="#f2ebe0" stroke-width="0.8" opacity="0.4"/>
+      <text x="1128" y="43" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.4">250 мм</text>
+
+      <!-- Layer 2: Acoustic mineral wool -->
+      <rect x="100" y="53" width="1000" height="32" fill="#0f1a20" stroke="#d9e9ec" stroke-width="0.8" opacity="0.7"/>
+      <rect x="100" y="53" width="1000" height="32" fill="url(#wool-dots)"/>
+      <text x="120" y="74" font-family="JetBrains Mono, monospace" font-size="9" fill="#d9e9ec" opacity="0.8">АКУСТИЧЕСКАЯ МИНЕРАЛЬНАЯ ВАТА · 100 мм</text>
+
+      <!-- Layer 3: Sylomer isolator layer -->
+      <rect x="100" y="85" width="1000" height="20" fill="#0d1e26" stroke="#5ba4b5" stroke-width="1" opacity="0.9"/>
+      <rect x="100" y="85" width="1000" height="20" fill="url(#mat-lines)"/>
+      <text x="120" y="100" font-family="JetBrains Mono, monospace" font-size="9" fill="#5ba4b5" opacity="0.9">SYLOMER SR 220 · ВИБРОИЗОЛИРУЮЩИЙ МАТ</text>
+
+      <!-- Arrow label for Sylomer -->
+      <line x1="1108" y1="95" x2="1125" y2="95" stroke="#5ba4b5" stroke-width="0.8" opacity="0.5"/>
+      <text x="1128" y="99" font-family="JetBrains Mono, monospace" font-size="8" fill="#5ba4b5" opacity="0.6">25 мм</text>
+
+      <!-- Floating floor isolator supports (rendered as small cylinders) -->
+      <g fill="#5ba4b5" opacity="0.7">
+        <rect x="135" y="105" width="12" height="14" rx="2" fill="rgba(91,164,181,0.2)" stroke="#5ba4b5" stroke-width="1"/>
+        <rect x="260" y="105" width="12" height="14" rx="2" fill="rgba(91,164,181,0.2)" stroke="#5ba4b5" stroke-width="1"/>
+        <rect x="385" y="105" width="12" height="14" rx="2" fill="rgba(91,164,181,0.2)" stroke="#5ba4b5" stroke-width="1"/>
+        <rect x="510" y="105" width="12" height="14" rx="2" fill="rgba(91,164,181,0.2)" stroke="#5ba4b5" stroke-width="1"/>
+        <rect x="635" y="105" width="12" height="14" rx="2" fill="rgba(91,164,181,0.2)" stroke="#5ba4b5" stroke-width="1"/>
+        <rect x="760" y="105" width="12" height="14" rx="2" fill="rgba(91,164,181,0.2)" stroke="#5ba4b5" stroke-width="1"/>
+        <rect x="885" y="105" width="12" height="14" rx="2" fill="rgba(91,164,181,0.2)" stroke="#5ba4b5" stroke-width="1"/>
+        <rect x="1010" y="105" width="12" height="14" rx="2" fill="rgba(91,164,181,0.2)" stroke="#5ba4b5" stroke-width="1"/>
+      </g>
+
+      <!-- Layer label for supports -->
+      <text x="120" y="125" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#5ba4b5" opacity="0.6">ИЗОЛИРУЮЩИЕ ОПОРЫ (ПЛАВАЮЩИЙ ПОЛ)</text>
+
+      <!-- Layer 4: Floating floor subfloor -->
+      <rect x="100" y="119" width="1000" height="18" fill="#1e2535" stroke="#f2ebe0" stroke-width="0.8" opacity="0.6"/>
+      <text x="120" y="133" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" opacity="0.5">ФАНЕРНОЕ ОСНОВАНИЕ ПЛАВАЮЩЕГО ПОЛА · 22 мм</text>
+
+      <!-- Layer 5: Final finish -->
+      <rect x="100" y="137" width="1000" height="14" fill="#2e3550" stroke="#f2ebe0" stroke-width="0.5" opacity="0.5"/>
+      <rect x="100" y="137" width="1000" height="14" fill="url(#finish-lines)"/>
+      <text x="120" y="149" font-family="JetBrains Mono, monospace" font-size="8.5" fill="#f2ebe0" opacity="0.4">ФИНИШНОЕ ПОКРЫТИЕ (БЕТОН / ПАРКЕТ)</text>
+
+      <!-- Total depth bracket -->
+      <line x1="90" y1="25" x2="90" y2="151" stroke="#f2ebe0" stroke-width="0.8" opacity="0.3"/>
+      <line x1="85" y1="25" x2="95" y2="25" stroke="#f2ebe0" stroke-width="0.8" opacity="0.3"/>
+      <line x1="85" y1="151" x2="95" y2="151" stroke="#f2ebe0" stroke-width="0.8" opacity="0.3"/>
+      <text x="72" y="92" font-family="JetBrains Mono, monospace" font-size="8" fill="#f2ebe0" opacity="0.3" text-anchor="middle" transform="rotate(-90,72,92)">≈ 430 мм</text>
+    </svg>
+    <div class="illus-caption">Конструкция перекрытия · акустический пакет · −38 дБ между этажами</div>
+  </div>
+</div>
+
+<!-- SPECS GRID -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">Характеристики</div>
+    <div class="section-body">
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="sp-label">Основная система 2 эт.</div>
+          <div class="sp-val">Funktion-One</div>
+          <div class="sp-sub">F218 + Evo 7</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Система 1 этажа</div>
+          <div class="sp-val">d&amp;b audiotechnik</div>
+          <div class="sp-sub">V-Series</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Сабвуферы</div>
+          <div class="sp-val">4 × Funktion-One F218</div>
+          <div class="sp-sub">Виброизолирующий подвес</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Виброизоляция</div>
+          <div class="sp-val">Sylomer SR 220</div>
+          <div class="sp-sub">Опоры + мат</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Изоляция перекрытий</div>
+          <div class="sp-val">−38 дБ</div>
+          <div class="sp-sub">Измеренный результат</div>
+        </div>
+        <div class="spec-item">
+          <div class="sp-label">Управление</div>
+          <div class="sp-val">2 независимых поста</div>
+          <div class="sp-sub">FOH каждого уровня</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EQUIPMENT LIST -->
+<section class="case-section">
+  <div class="section-intro-grid">
+    <div class="section-label">Оборудование</div>
+    <div class="section-body">
+      <ul class="equip-list">
+        <li>
+          <span class="eq-name">Funktion-One Evo 7 × 8</span>
+          <span class="eq-role">Основной кластер</span>
+        </li>
+        <li>
+          <span class="eq-name">Funktion-One F218 × 4</span>
+          <span class="eq-role">Сабвуферы</span>
+        </li>
+        <li>
+          <span class="eq-name">Powersoft X8 × 2</span>
+          <span class="eq-role">Усиление основной системы</span>
+        </li>
+        <li>
+          <span class="eq-name">d&amp;b audiotechnik V8 × 6</span>
+          <span class="eq-role">Система первого этажа</span>
+        </li>
+        <li>
+          <span class="eq-name">d&amp;b audiotechnik V-SUB × 2</span>
+          <span class="eq-role">Низкий этаж</span>
+        </li>
+        <li>
+          <span class="eq-name">Allen &amp; Heath dLive S5000</span>
+          <span class="eq-role">FOH-консоль</span>
+        </li>
+        <li>
+          <span class="eq-name">Lake LM44 × 2</span>
+          <span class="eq-role">Системный процессор</span>
+        </li>
+        <li>
+          <span class="eq-name">Sylomer SR 220</span>
+          <span class="eq-role">Виброизоляция подвеса</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- CLIENT QUOTE -->
+<div class="client-quote">
+  <p class="cq-text">«Первый раз видел, чтобы на втором этаже шла вечеринка, а на первом можно было разговаривать шёпотом.»</p>
+  <div class="cq-author">— Организаторы проекта</div>
+</div>
+
+<!-- NEXT PROJECT -->
+<a href="/portfolio/levan.html" class="next-project">
+  <div class="np-label">Следующий проект</div>
+  <div class="np-title">Клуб <span class="ital">Левана</span></div>
+  <div class="np-arrow">→</div>
+</a>
+
+<!-- CTA -->
+<section class="case-cta">
+  <h3>Нужна <span class="ital">звукоизоляция</span>?</h3>
+  <p>Проектируем акустические пакеты для любой сложности объектов.</p>
+  <a href="/#контакты" class="btn">Обсудить проект →</a>
+</section>
+
+<footer>
+  <div>© 2026 · Акустическое бюро ВОЛНА</div>
+  <a href="/portfolio/">← Портфолио</a>
+  <div>〜 buro-volna.ru</div>
+</footer>
+
+</body>
+</html>
