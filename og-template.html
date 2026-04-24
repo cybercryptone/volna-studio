@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #0a0e1a;
+    font-family: 'Unbounded', sans-serif;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;600&family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
+  .bg {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(74,124,138,0.35) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 50% at 20% 80%, rgba(255,107,61,0.18) 0%, transparent 60%);
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(242,235,224,0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(242,235,224,0.06) 1px, transparent 1px);
+    background-size: 80px 80px;
+  }
+  .waves {
+    position: absolute; bottom: 0; left: 0; right: 0;
+  }
+  .content {
+    position: relative; z-index: 2;
+    padding: 56px 72px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .logo {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.35em;
+    color: #f2ebe0;
+    opacity: 0.9;
+    text-transform: uppercase;
+  }
+  .badge {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: #f2ebe0;
+    opacity: 0.45;
+    text-transform: uppercase;
+    padding-top: 4px;
+  }
+  .middle { flex: 1; display: flex; align-items: center; }
+  .title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 200;
+    font-size: 128px;
+    line-height: 0.88;
+    letter-spacing: -0.04em;
+    color: #f2ebe0;
+  }
+  .title-italic {
+    display: block;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 80px;
+    color: #d9e9ec;
+    letter-spacing: 0;
+    margin-top: 8px;
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 26px;
+    color: #f2ebe0;
+    opacity: 0.7;
+    max-width: 560px;
+    line-height: 1.35;
+  }
+  .url {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    color: #ff6b3d;
+    opacity: 0.9;
+    text-transform: lowercase;
+  }
+  .accent-line {
+    width: 48px; height: 2px;
+    background: #ff6b3d;
+    margin-bottom: 16px;
+  }
+</style>
+</head>
+<body>
+  <div class="bg"></div>
+  <div class="grid"></div>
+
+  <!-- SVG waves -->
+  <svg class="waves" viewBox="0 0 1200 200" preserveAspectRatio="none" height="200">
+    <path d="M0 140 Q 150 100, 300 140 T 600 140 T 900 140 T 1200 140 L1200 200 L0 200Z"
+          fill="rgba(74,124,138,0.15)"/>
+    <path d="M0 160 Q 200 120, 400 160 T 800 160 T 1200 160 L1200 200 L0 200Z"
+          fill="rgba(74,124,138,0.1)"/>
+    <path d="M0 100 Q 150 80, 300 100 T 600 100 T 900 100 T 1200 100"
+          stroke="rgba(255,107,61,0.3)" stroke-width="1.5" fill="none"/>
+    <path d="M0 120 Q 200 100, 400 120 T 800 120 T 1200 120"
+          stroke="rgba(242,235,224,0.15)" stroke-width="1" fill="none"/>
+    <path d="M0 135 Q 250 115, 500 135 T 1000 135 T 1200 135"
+          stroke="rgba(242,235,224,0.1)" stroke-width="1" fill="none"/>
+  </svg>
+
+  <div class="content">
+    <div class="top">
+      <div class="logo">〜 ВОЛНА</div>
+      <div class="badge">Акустическое бюро · Москва</div>
+    </div>
+    <div class="middle">
+      <div>
+        <div class="title">ВОЛНА
+          <span class="title-italic">звуковой опыт</span>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>
+        <div class="accent-line"></div>
+        <div class="tagline">Мы не продаём звук.<br>Мы продаём эмоцию.</div>
+      </div>
+      <div class="url">buro-volna.ru</div>
+    </div>
+  </div>
+</body>
+</html>
