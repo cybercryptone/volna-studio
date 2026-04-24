@@ -1,4 +1,6 @@
 {
-  "version": 2,
-  "builds": [{ "src": "**/*.{html,css,js,png,jpg,svg,ico,webp}", "use": "@vercel/static" }]
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "installCommand": "echo skip",
+  "framework": null
 }
