@@ -64,9 +64,25 @@ nav {
   color: var(--sand);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
-.logo-tilde { color: var(--coral); }
+.logo-wave {
+  width: 32px; height: 14px;
+  position: relative;
+  flex-shrink: 0;
+}
+.logo-wave svg { width: 100%; height: 100%; }
+.logo-wave path {
+  stroke: var(--sand);
+  stroke-width: 1.5;
+  fill: none;
+  stroke-dasharray: 100;
+  animation: logoWave 3s ease-in-out infinite;
+}
+@keyframes logoWave {
+  0%, 100% { stroke-dashoffset: 0; }
+  50% { stroke-dashoffset: 100; }
+}
 .nav-links {
   display: flex; gap: 36px;
   font-family: 'JetBrains Mono', monospace;
